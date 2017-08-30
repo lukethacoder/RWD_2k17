@@ -1,0 +1,434 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700");
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  font-family: Montserrat; }
+
+section {
+  margin: 0 auto;
+  padding: 0; }
+
+.navbar {
+  background-color: #2a2f55;
+  width: 100%;
+  height: 75px;
+  margin: 0 auto;
+  padding: 0; }
+  .navbar .inner {
+    margin: 0 auto;
+    width: 65%; }
+    .navbar .inner .logo {
+      float: left;
+      margin: 0 auto;
+      padding: 0; }
+      .navbar .inner .logo a {
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        display: inline-block;
+        margin: 15px auto;
+        margin-left: 0;
+        padding: 0;
+        width: 135px;
+        height: 45px;
+        background: url("https://d2k1ftgv7pobq7.cloudfront.net/meta/u/res/images/trello-header-logos/af7af6ed478d3460709d715d9b3f74a4/trello-logo-white.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center; }
+    .navbar .inner .nav {
+      margin: 0 auto;
+      height: 75px;
+      float: right; }
+      .navbar .inner .nav ul {
+        margin: 0;
+        list-style: none; }
+      .navbar .inner .nav li {
+        display: inline-block;
+        margin-right: 15px; }
+      .navbar .inner .nav a {
+        display: block;
+        text-decoration: none;
+        line-height: 75px;
+        color: #f3f3f3; }
+
+#main {
+  margin: 0 auto;
+  padding: 0; }
+  #main #home {
+    width: 100%;
+    height: 850px;
+    margin: 0 auto;
+    padding: 0;
+    background: url(test.jpg) center center no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative; }
+    #main #home:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-image: linear-gradient(to bottom right, rgba(42, 47, 85, 0.7), rgba(42, 8, 69, 0.7));
+      overflow: hidden; }
+    #main #home .inner {
+      width: 65%;
+      height: 750px;
+      margin: 0 auto; }
+      #main #home .inner .section-title {
+        display: none; }
+      #main #home .inner .section-content {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 65%;
+        height: 750px; }
+        #main #home .inner .section-content .hero-unit {
+          display: block;
+          margin-top: 20%; }
+          #main #home .inner .section-content .hero-unit h1 {
+            width: 50%;
+            color: #f3f3f3;
+            font-size: 78px;
+            margin: 5px auto;
+            margin-right: 50%;
+            float: left; }
+          #main #home .inner .section-content .hero-unit p:nth-child(2) {
+            width: 50%;
+            font-size: 24px;
+            font-weight: 200; }
+          #main #home .inner .section-content .hero-unit p {
+            width: 100%;
+            color: #f3f3f3; }
+            #main #home .inner .section-content .hero-unit p .large {
+              border: 2px solid #222222;
+              border-radius: 5px;
+              color: #f3f3f3;
+              background-color: #2a2f55;
+              padding: 10px;
+              text-decoration: none;
+              font-size: 18px;
+              font-weight: 400; }
+              #main #home .inner .section-content .hero-unit p .large:hover {
+                border: 2px solid #2a2f55;
+                color: #222222;
+                background-color: #f3f3f3; }
+            #main #home .inner .section-content .hero-unit p .arrow-down {
+              position: absolute;
+              bottom: 0;
+              text-indent: 100%;
+              white-space: nowrap;
+              overflow: hidden;
+              display: block;
+              margin: 0;
+              padding: 0;
+              width: 100%;
+              height: 75px;
+              background: url("https://www.materialui.co/materialIcons/hardware/keyboard_arrow_down_white_192x192.png");
+              background-size: contain;
+              background-repeat: no-repeat;
+              background-position: center center;
+              text-align: center; }
+  #main #introduction .inner .section-title {
+    width: 100%;
+    height: auto;
+    display: block; }
+    #main #introduction .inner .section-title h1 {
+      width: 100%;
+      color: #222222;
+      font-size: 48px;
+      margin: 0 auto;
+      text-align: center;
+      margin-top: 150px; }
+    #main #introduction .inner .section-title p {
+      width: 100%;
+      color: #2a2f55;
+      font-size: 24px;
+      margin: 0 auto;
+      text-align: center;
+      margin-bottom: 150px; }
+  #main #introduction .inner .section-content {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0; }
+    #main #introduction .inner .section-content ul {
+      column-count: 3;
+      column-gap: 0px;
+      list-style-type: none;
+      margin: 0;
+      padding: 0; }
+      #main #introduction .inner .section-content ul li {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        background-size: cover;
+        overflow: hidden;
+        position: relative; }
+        #main #introduction .inner .section-content ul li:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-image: linear-gradient(to bottom right, rgba(42, 47, 85, 0.7), rgba(42, 8, 69, 0.7));
+          overflow: hidden; }
+        #main #introduction .inner .section-content ul li .section-img {
+          height: 350px; }
+        #main #introduction .inner .section-content ul li h2 {
+          color: #f3f3f3;
+          font-weight: 300;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+          width: 95%;
+          height: 35%;
+          text-align: center;
+          font-size: 36px; }
+        #main #introduction .inner .section-content ul li .content {
+          margin: 10px auto; }
+          #main #introduction .inner .section-content ul li .content p {
+            color: #f3f3f3;
+            font-weight: 200;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 50%;
+            height: 10%;
+            text-align: center; }
+      #main #introduction .inner .section-content ul li:first-of-type {
+        background: url(test.jpg) center center no-repeat; }
+      #main #introduction .inner .section-content ul li:nth-of-type(2) {
+        background-image: url("https://images.pexels.com/photos/267447/pexels-photo-267447.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb"); }
+      #main #introduction .inner .section-content ul li:nth-of-type(3) {
+        background-image: url("https://images.pexels.com/photos/541525/pexels-photo-541525.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb"); }
+  #main #portfolio .section-title {
+    width: 100%;
+    height: auto;
+    display: block; }
+    #main #portfolio .section-title h1 {
+      width: 100%;
+      color: #222222;
+      font-size: 48px;
+      margin: 0 auto;
+      text-align: center;
+      margin-top: 150px; }
+    #main #portfolio .section-title p {
+      width: 100%;
+      color: #2a2f55;
+      font-size: 24px;
+      margin: 0 auto;
+      text-align: center;
+      margin-bottom: 150px; }
+  #main #portfolio .section-content ul, #main #portfolio .item ul {
+    column-count: 4;
+    column-gap: 0px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+    #main #portfolio .section-content ul li, #main #portfolio .item ul li {
+      width: 100%;
+      height: 350px;
+      margin: 0 auto;
+      padding: 0;
+      background: url(test.jpg) center center no-repeat;
+      background-size: 125%;
+      overflow: hidden;
+      position: relative;
+      transition: .5s; }
+      #main #portfolio .section-content ul li:before, #main #portfolio .item ul li:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(to bottom right, rgba(42, 47, 85, 0.7), rgba(42, 8, 69, 0.7));
+        overflow: hidden;
+        transition: .5s; }
+      #main #portfolio .section-content ul li:hover, #main #portfolio .item ul li:hover {
+        background-size: 150%;
+        transition: .5s; }
+        #main #portfolio .section-content ul li:hover:before, #main #portfolio .item ul li:hover:before {
+          background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+          transition: .5s; }
+      #main #portfolio .section-content ul li div, #main #portfolio .item ul li div {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 100%;
+        height: 50%;
+        text-align: center; }
+        #main #portfolio .section-content ul li div .screenshot a img, #main #portfolio .item ul li div .screenshot a img {
+          display: none; }
+        #main #portfolio .section-content ul li div .caption, #main #portfolio .item ul li div .caption {
+          text-align: center; }
+          #main #portfolio .section-content ul li div .caption h2 a, #main #portfolio .item ul li div .caption h2 a {
+            color: #f3f3f3;
+            text-decoration: none;
+            font-size: 28px; }
+          #main #portfolio .section-content ul li div .caption p, #main #portfolio .item ul li div .caption p {
+            color: #f3f3f3; }
+  #main #team .section-title {
+    width: 100%;
+    height: auto;
+    display: block; }
+    #main #team .section-title h1 {
+      width: 100%;
+      color: #222222;
+      font-size: 48px;
+      margin: 0 auto;
+      text-align: center;
+      margin-top: 150px; }
+    #main #team .section-title p {
+      width: 100%;
+      color: #2a2f55;
+      font-size: 24px;
+      margin: 0 auto;
+      text-align: center;
+      margin-bottom: 150px; }
+  #main #team .section-content .about > p {
+    width: 65%;
+    color: #f3f3f3;
+    background-color: #2a2f55;
+    margin-top: 0px;
+    margin-bottom: 2px;
+    padding: 5px 17.5%;
+    text-align: center;
+    text-indent: 100%;
+    overflow: hidden;
+    display: inline-block; }
+  #main #team .section-content .about .team > ul {
+    column-count: 4;
+    column-gap: 0px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+    #main #team .section-content .about .team > ul > li:first-child {
+      background: url("https://images.pexels.com/photos/428339/pexels-photo-428339.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb") center center no-repeat; }
+    #main #team .section-content .about .team > ul > li:nth-child(2) {
+      background: url("https://images.pexels.com/photos/307847/pexels-photo-307847.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb") center center no-repeat; }
+    #main #team .section-content .about .team > ul > li:nth-child(3) {
+      background: url("https://images.pexels.com/photos/450271/pexels-photo-450271.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb") center center no-repeat; }
+    #main #team .section-content .about .team > ul > li:nth-child(4) {
+      background: url("https://images.pexels.com/photos/57690/pexels-photo-57690.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb") center center no-repeat; }
+    #main #team .section-content .about .team > ul > li {
+      width: 100%;
+      height: 450px;
+      margin: 0 auto;
+      padding: 0;
+      background-size: cover;
+      overflow: hidden;
+      position: relative;
+      transition: .5s; }
+      #main #team .section-content .about .team > ul > li:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(to bottom right, rgba(42, 47, 85, 0.7), rgba(42, 8, 69, 0.7));
+        overflow: hidden;
+        transition: .5s; }
+      #main #team .section-content .about .team > ul > li:hover .thumbnail {
+        display: block;
+        transition: .5s; }
+      #main #team .section-content .about .team > ul > li:hover:before {
+        background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+        transition: .5s; }
+      #main #team .section-content .about .team > ul > li .thumbnail {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 100%;
+        height: 50%;
+        text-align: center;
+        display: none;
+        transition: .5s; }
+        #main #team .section-content .about .team > ul > li .thumbnail a img {
+          display: none; }
+        #main #team .section-content .about .team > ul > li .thumbnail .caption {
+          display: block;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+          width: 100%;
+          height: 75%;
+          text-align: center; }
+          #main #team .section-content .about .team > ul > li .thumbnail .caption h3 {
+            width: 80%;
+            margin: 10px auto;
+            color: #f3f3f3; }
+          #main #team .section-content .about .team > ul > li .thumbnail .caption .meta {
+            color: #f3f3f3;
+            font-weight: 400; }
+          #main #team .section-content .about .team > ul > li .thumbnail .caption p {
+            width: 80%;
+            margin: 5px auto;
+            color: #f3f3f3; }
+          #main #team .section-content .about .team > ul > li .thumbnail .caption ul {
+            column-count: 3;
+            column-gap: 5px;
+            list-style-type: none;
+            margin: 10px;
+            padding: 0; }
+            #main #team .section-content .about .team > ul > li .thumbnail .caption ul li a em {
+              background-color: green;
+              width: 15px;
+              height: 15px; }
+  #main #contact .section-title {
+    width: 100%;
+    height: auto;
+    display: block; }
+    #main #contact .section-title h1 {
+      width: 100%;
+      color: #222222;
+      font-size: 48px;
+      margin: 0 auto;
+      text-align: center;
+      margin-top: 150px; }
+    #main #contact .section-title p {
+      width: 100%;
+      color: #2a2f55;
+      font-size: 24px;
+      margin: 0 auto;
+      text-align: center;
+      margin-bottom: 150px; }
+  #main #contact .section-content {
+    background-color: #2a0845; }
+    #main #contact .section-content .info p {
+      background-color: #2a2f55; }
+    #main #contact .section-content .info .details address {
+      color: #f3f3f3; }
+    #main #contact .section-content .map iframe {
+      width: 100%; }
+
+.footer {
+  background-color: #2a2f55;
+  color: #f3f3f3; }
+
+/*# sourceMappingURL=style.css.map */
