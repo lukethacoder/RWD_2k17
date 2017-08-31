@@ -178,7 +178,7 @@ section {
               text-align: center;
               animation: slidein 2s infinite;
               &:hover {
-                animation-play-state: paused ;
+                animation-play-state: paused;
               }
             }
             @keyframes slidein {
