@@ -176,6 +176,21 @@ section {
               background-repeat: no-repeat;
               background-position: center center;
               text-align: center;
+              animation: slidein 2s infinite;
+              &:hover {
+                animation-play-state: paused ;
+              }
+            }
+            @keyframes slidein {
+              0% {
+                transform: translateY(0px);
+              }
+              50% {
+                transform: translateY(10px);
+              }
+              100% {
+                transform: translateY(0px);
+              }
             }
           }
         }
