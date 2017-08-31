@@ -44,4 +44,7 @@ $RECYCLE.BIN/
 .AppleDesktop
 Network Trash Folder
 Temporary Items
-.apdisk
+.jpg
+node_modules/
+style_aj.css
+style_tk.css
