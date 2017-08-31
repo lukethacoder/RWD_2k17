@@ -134,7 +134,18 @@ section {
               background-size: contain;
               background-repeat: no-repeat;
               background-position: center center;
-              text-align: center; }
+              text-align: center;
+              animation: slidein 2s infinite; }
+              #main #home .inner .section-content .hero-unit p .arrow-down:hover {
+                animation-play-state: paused; }
+
+@keyframes slidein {
+  0% {
+    transform: translateY(0px); }
+  50% {
+    transform: translateY(10px); }
+  100% {
+    transform: translateY(0px); } }
   #main #introduction .inner .section-title {
     width: 100%;
     height: auto;
