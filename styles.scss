@@ -93,6 +93,10 @@ section {
 #main {
   margin: 0 auto;
   padding: 0;
+  width: 100%;
+  display: inline-block;
+  z-index: 500;
+  position: relative;
   #home {
     width: 100%;
     height: 850px;
@@ -102,6 +106,7 @@ section {
     background-size: cover;
     overflow: hidden;
     position: relative;
+    z-index: 500;
     &:before {
       content: '';
       position: absolute;
@@ -177,8 +182,8 @@ section {
               margin: 0;
               padding: 0;
               width: 100%;
-              height: 75px;
-              background: url("https://www.materialui.co/materialIcons/hardware/keyboard_arrow_down_white_192x192.png");
+              height: 50px;
+              background: url("https://drive.google.com/uc?export=view&id=0Bwu5EGqxLm53Yk5jNFZaT1JLdkU");
               background-size: contain;
               background-repeat: no-repeat;
               background-position: center center;
@@ -206,6 +211,8 @@ section {
   }
 
   #introduction {
+    z-index: 500;
+    position: relative;
     .inner {
       .section-title {
         width: 100%;
@@ -308,6 +315,8 @@ section {
   }
 
   #portfolio {
+    z-index: 500;
+    position: relative;
     .section-title {
       width: 100%;
       height: auto;
@@ -404,6 +413,8 @@ section {
   }
 
   #team {
+    z-index: 500;
+    position: relative;
     .section-title {
       width: 100%;
       height: auto;
@@ -556,6 +567,8 @@ section {
   }
 
   #contact {
+    z-index: 500;
+    position: relative;
     .section-title {
       width: 100%;
       height: auto;
@@ -657,6 +670,7 @@ section {
     }
 
     ul /* .social */ {
+      z-index: 0;
       list-style: none;
       position: relative;
       width: $page_width;
@@ -666,7 +680,9 @@ section {
       display: flex;
       justify-content: center;
       background-color: $c_06;
+      border-top: 50px $c_05;
       li {
+        .thumbnail {
           margin: 25px 50px;
           padding: 0;
           position: relative;
@@ -681,7 +697,7 @@ section {
           background-position: center center;
           text-align: center;
           opacity: 1;
-          transition: .5s;
+          transition: opacity .5s ease-in-out;
           &:before {
             content: '';
             position: absolute;
@@ -691,18 +707,15 @@ section {
             left: 0;
             right: 0;
           }
-          &:hover {
-            opacity: 0.5;
-            transition: .5s;
-          }
+        }
       }
-      li:nth-child(1){
+      li:nth-of-type(1){
           background-image: url('https://drive.google.com/uc?export=view&id=0Bwu5EGqxLm53ZXI5VUJVdVRvSFE');
       } 
-      li:nth-child(2){
+      li:nth-of-type(2){
           background-image: url('https://drive.google.com/uc?export=view&id=0Bwu5EGqxLm53U1ZJOGFiVTNDbVk');
       }
-      li:nth-child(3){
+      li:nth-of-type(3){
           background-image: url('https://drive.google.com/uc?export=view&id=0Bwu5EGqxLm53aEpER3dpNkg4dE0');
       }
     }
@@ -715,8 +728,24 @@ section {
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: url('https://drive.google.com/uc?export=view&id=0Bwu5EGqxLm53Yk5jNFZaT1JLdkU');
+  background: url("https://drive.google.com/uc?export=view&id=0Bwu5EGqxLm53Yk5jNFZaT1JLdkU") no-repeat center center/90px 90px;
+  background-size: cover;
   height: 35px;
-  width: 100%;
+  margin: 15px auto;
+  width: 35px;
   margin-top: 250px;
+  z-index: 0;
+  -ms-transform: rotate(180deg); /* IE 9 */
+  -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+  transform: rotate(180deg);
+  transition: .25s;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  &:hover {
+    -ms-transform: rotate(180deg) translateY(2px); /* IE 9 */
+    -webkit-transform: rotate(180deg) translateY(2px); /* Chrome, Safari, Opera */
+    transform: rotate(180deg) translateY(2px);
+    transition: .25s;
+  }
 }

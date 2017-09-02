@@ -55,7 +55,11 @@ section {
 
 #main {
   margin: 0 auto;
-  padding: 0; }
+  padding: 0;
+  width: 100%;
+  display: inline-block;
+  z-index: 500;
+  position: relative; }
   #main #home {
     width: 100%;
     height: 850px;
@@ -64,7 +68,8 @@ section {
     background: url(test.jpg) center center no-repeat;
     background-size: cover;
     overflow: hidden;
-    position: relative; }
+    position: relative;
+    z-index: 500; }
     #main #home:before {
       content: '';
       position: absolute;
@@ -134,8 +139,8 @@ section {
               margin: 0;
               padding: 0;
               width: 100%;
-              height: 75px;
-              background: url("https://www.materialui.co/materialIcons/hardware/keyboard_arrow_down_white_192x192.png");
+              height: 50px;
+              background: url("https://drive.google.com/uc?export=view&id=0Bwu5EGqxLm53Yk5jNFZaT1JLdkU");
               background-size: contain;
               background-repeat: no-repeat;
               background-position: center center;
@@ -151,43 +156,127 @@ section {
     transform: translateY(10px); }
   100% {
     transform: translateY(0px); } }
-  #main #introduction .inner .section-title {
-    width: 100%;
-    height: auto;
-    display: block; }
-    #main #introduction .inner .section-title h1 {
+  #main #introduction {
+    z-index: 500;
+    position: relative; }
+    #main #introduction .inner .section-title {
       width: 100%;
-      color: #222222;
-      font-size: 48px;
-      margin: 0 auto;
-      text-align: center;
-      margin-top: 150px; }
-    #main #introduction .inner .section-title p {
+      height: auto;
+      display: block; }
+      #main #introduction .inner .section-title h1 {
+        width: 100%;
+        color: #222222;
+        font-size: 48px;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 150px; }
+      #main #introduction .inner .section-title p {
+        width: 100%;
+        color: #2a2f55;
+        font-size: 24px;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 150px; }
+    #main #introduction .inner .section-content {
       width: 100%;
-      color: #2a2f55;
-      font-size: 24px;
-      margin: 0 auto;
-      text-align: center;
-      margin-bottom: 150px; }
-  #main #introduction .inner .section-content {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    padding: 0; }
-    #main #introduction .inner .section-content ul {
-      column-count: 3;
+      height: auto;
+      margin: 0;
+      padding: 0; }
+      #main #introduction .inner .section-content ul {
+        column-count: 3;
+        column-gap: 0px;
+        list-style-type: none;
+        margin: 0;
+        padding: 0; }
+        #main #introduction .inner .section-content ul li {
+          width: 100%;
+          margin: 0 auto;
+          padding: 0;
+          background-size: cover;
+          overflow: hidden;
+          position: relative; }
+          #main #introduction .inner .section-content ul li:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-image: linear-gradient(to bottom right, rgba(42, 47, 85, 0.7), rgba(42, 8, 69, 0.7));
+            overflow: hidden; }
+          #main #introduction .inner .section-content ul li .section-img {
+            height: 350px; }
+          #main #introduction .inner .section-content ul li h2 {
+            color: #f3f3f3;
+            font-weight: 300;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 95%;
+            height: 35%;
+            text-align: center;
+            font-size: 36px; }
+          #main #introduction .inner .section-content ul li .content {
+            margin: 10px auto; }
+            #main #introduction .inner .section-content ul li .content p {
+              color: #f3f3f3;
+              font-weight: 200;
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              margin: auto;
+              width: 50%;
+              height: 10%;
+              text-align: center; }
+        #main #introduction .inner .section-content ul li:first-of-type {
+          background: url(test.jpg) center center no-repeat; }
+        #main #introduction .inner .section-content ul li:nth-of-type(2) {
+          background-image: url("https://images.pexels.com/photos/267447/pexels-photo-267447.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb"); }
+        #main #introduction .inner .section-content ul li:nth-of-type(3) {
+          background-image: url("https://images.pexels.com/photos/541525/pexels-photo-541525.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb"); }
+  #main #portfolio {
+    z-index: 500;
+    position: relative; }
+    #main #portfolio .section-title {
+      width: 100%;
+      height: auto;
+      display: block; }
+      #main #portfolio .section-title h1 {
+        width: 100%;
+        color: #222222;
+        font-size: 48px;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 150px; }
+      #main #portfolio .section-title p {
+        width: 100%;
+        color: #2a2f55;
+        font-size: 24px;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 150px; }
+    #main #portfolio .section-content ul, #main #portfolio .item ul {
+      column-count: 4;
       column-gap: 0px;
       list-style-type: none;
       margin: 0;
       padding: 0; }
-      #main #introduction .inner .section-content ul li {
+      #main #portfolio .section-content ul li, #main #portfolio .item ul li {
         width: 100%;
+        height: 350px;
         margin: 0 auto;
         padding: 0;
-        background-size: cover;
+        background: url(test.jpg) center center no-repeat;
+        background-size: 125%;
         overflow: hidden;
-        position: relative; }
-        #main #introduction .inner .section-content ul li:before {
+        position: relative;
+        transition: .5s; }
+        #main #portfolio .section-content ul li:before, #main #portfolio .item ul li:before {
           content: '';
           position: absolute;
           top: 0;
@@ -195,195 +284,15 @@ section {
           bottom: 0;
           left: 0;
           background-image: linear-gradient(to bottom right, rgba(42, 47, 85, 0.7), rgba(42, 8, 69, 0.7));
-          overflow: hidden; }
-        #main #introduction .inner .section-content ul li .section-img {
-          height: 350px; }
-        #main #introduction .inner .section-content ul li h2 {
-          color: #f3f3f3;
-          font-weight: 300;
-          position: absolute;
-          top: 0;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          margin: auto;
-          width: 95%;
-          height: 35%;
-          text-align: center;
-          font-size: 36px; }
-        #main #introduction .inner .section-content ul li .content {
-          margin: 10px auto; }
-          #main #introduction .inner .section-content ul li .content p {
-            color: #f3f3f3;
-            font-weight: 200;
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            margin: auto;
-            width: 50%;
-            height: 10%;
-            text-align: center; }
-      #main #introduction .inner .section-content ul li:first-of-type {
-        background: url(test.jpg) center center no-repeat; }
-      #main #introduction .inner .section-content ul li:nth-of-type(2) {
-        background-image: url("https://images.pexels.com/photos/267447/pexels-photo-267447.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb"); }
-      #main #introduction .inner .section-content ul li:nth-of-type(3) {
-        background-image: url("https://images.pexels.com/photos/541525/pexels-photo-541525.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb"); }
-  #main #portfolio .section-title {
-    width: 100%;
-    height: auto;
-    display: block; }
-    #main #portfolio .section-title h1 {
-      width: 100%;
-      color: #222222;
-      font-size: 48px;
-      margin: 0 auto;
-      text-align: center;
-      margin-top: 150px; }
-    #main #portfolio .section-title p {
-      width: 100%;
-      color: #2a2f55;
-      font-size: 24px;
-      margin: 0 auto;
-      text-align: center;
-      margin-bottom: 150px; }
-  #main #portfolio .section-content ul, #main #portfolio .item ul {
-    column-count: 4;
-    column-gap: 0px;
-    list-style-type: none;
-    margin: 0;
-    padding: 0; }
-    #main #portfolio .section-content ul li, #main #portfolio .item ul li {
-      width: 100%;
-      height: 350px;
-      margin: 0 auto;
-      padding: 0;
-      background: url(test.jpg) center center no-repeat;
-      background-size: 125%;
-      overflow: hidden;
-      position: relative;
-      transition: .5s; }
-      #main #portfolio .section-content ul li:before, #main #portfolio .item ul li:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background-image: linear-gradient(to bottom right, rgba(42, 47, 85, 0.7), rgba(42, 8, 69, 0.7));
-        overflow: hidden;
-        transition: .5s; }
-      #main #portfolio .section-content ul li:hover, #main #portfolio .item ul li:hover {
-        background-size: 150%;
-        transition: .5s; }
-        #main #portfolio .section-content ul li:hover:before, #main #portfolio .item ul li:hover:before {
-          background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+          overflow: hidden;
           transition: .5s; }
-      #main #portfolio .section-content ul li div, #main #portfolio .item ul li div {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: auto;
-        width: 100%;
-        height: 50%;
-        text-align: center; }
-        #main #portfolio .section-content ul li div .screenshot a img, #main #portfolio .item ul li div .screenshot a img {
-          display: none; }
-        #main #portfolio .section-content ul li div .caption, #main #portfolio .item ul li div .caption {
-          text-align: center; }
-          #main #portfolio .section-content ul li div .caption h2 a, #main #portfolio .item ul li div .caption h2 a {
-            color: #f3f3f3;
-            text-decoration: none;
-            font-size: 28px; }
-          #main #portfolio .section-content ul li div .caption p, #main #portfolio .item ul li div .caption p {
-            color: #f3f3f3; }
-  #main #team .section-title {
-    width: 100%;
-    height: auto;
-    display: block; }
-    #main #team .section-title h1 {
-      width: 100%;
-      color: #222222;
-      font-size: 48px;
-      margin: 0 auto;
-      text-align: center;
-      margin-top: 150px; }
-    #main #team .section-title p {
-      width: 100%;
-      color: #2a2f55;
-      font-size: 24px;
-      margin: 0 auto;
-      text-align: center;
-      margin-bottom: 150px; }
-  #main #team .section-content .about > p {
-    width: 65%;
-    color: #f3f3f3;
-    background-color: #1e1e42;
-    margin: 0 auto;
-    padding: 25px 17.5%;
-    text-align: center;
-    overflow: hidden;
-    display: inline-block; }
-  #main #team .section-content .about .team > ul {
-    column-count: 4;
-    column-gap: 0px;
-    list-style-type: none;
-    margin: 0;
-    padding: 0; }
-    #main #team .section-content .about .team > ul > li:first-child {
-      background: url("https://images.pexels.com/photos/428339/pexels-photo-428339.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb") center center no-repeat; }
-    #main #team .section-content .about .team > ul > li:nth-child(2) {
-      background: url("https://images.pexels.com/photos/307847/pexels-photo-307847.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb") center center no-repeat; }
-    #main #team .section-content .about .team > ul > li:nth-child(3) {
-      background: url("https://images.pexels.com/photos/450271/pexels-photo-450271.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb") center center no-repeat; }
-    #main #team .section-content .about .team > ul > li:nth-child(4) {
-      background: url("https://images.pexels.com/photos/57690/pexels-photo-57690.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb") center center no-repeat; }
-    #main #team .section-content .about .team > ul > li {
-      width: 100%;
-      height: 450px;
-      margin: 0 auto;
-      padding: 0;
-      background-size: cover;
-      overflow: hidden;
-      position: relative;
-      transition: .5s; }
-      #main #team .section-content .about .team > ul > li:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background-image: linear-gradient(to bottom right, rgba(42, 47, 85, 0.7), rgba(42, 8, 69, 0.7));
-        overflow: hidden;
-        transition: .5s; }
-      #main #team .section-content .about .team > ul > li:hover .thumbnail {
-        display: block;
-        transition: .5s; }
-      #main #team .section-content .about .team > ul > li:hover:before {
-        background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
-        transition: .5s; }
-      #main #team .section-content .about .team > ul > li .thumbnail {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: auto;
-        width: 100%;
-        height: 50%;
-        text-align: center;
-        display: none;
-        transition: .5s; }
-        #main #team .section-content .about .team > ul > li .thumbnail a img {
-          display: none; }
-        #main #team .section-content .about .team > ul > li .thumbnail .caption {
-          display: block;
-          height: 100%;
+        #main #portfolio .section-content ul li:hover, #main #portfolio .item ul li:hover {
+          background-size: 150%;
+          transition: .5s; }
+          #main #portfolio .section-content ul li:hover:before, #main #portfolio .item ul li:hover:before {
+            background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+            transition: .5s; }
+        #main #portfolio .section-content ul li div, #main #portfolio .item ul li div {
           position: absolute;
           top: 0;
           bottom: 0;
@@ -391,89 +300,197 @@ section {
           right: 0;
           margin: auto;
           width: 100%;
-          height: 75%;
+          height: 50%;
           text-align: center; }
-          #main #team .section-content .about .team > ul > li .thumbnail .caption h3 {
-            width: 80%;
-            margin: 10px auto;
-            color: #f3f3f3; }
-          #main #team .section-content .about .team > ul > li .thumbnail .caption .meta {
-            color: #f3f3f3;
-            font-weight: 400; }
-          #main #team .section-content .about .team > ul > li .thumbnail .caption p {
-            width: 80%;
-            margin: 5px auto;
-            color: #f3f3f3; }
-          #main #team .section-content .about .team > ul > li .thumbnail .caption ul {
-            column-count: 3;
-            column-gap: 5px;
-            list-style-type: none;
-            margin: 10px;
-            padding: 0; }
-            #main #team .section-content .about .team > ul > li .thumbnail .caption ul li a em {
-              width: 15px;
-              height: 15px; }
-  #main #contact .section-title {
-    width: 100%;
-    height: auto;
-    display: block; }
-    #main #contact .section-title h1 {
+          #main #portfolio .section-content ul li div .screenshot a img, #main #portfolio .item ul li div .screenshot a img {
+            display: none; }
+          #main #portfolio .section-content ul li div .caption, #main #portfolio .item ul li div .caption {
+            text-align: center; }
+            #main #portfolio .section-content ul li div .caption h2 a, #main #portfolio .item ul li div .caption h2 a {
+              color: #f3f3f3;
+              text-decoration: none;
+              font-size: 28px; }
+            #main #portfolio .section-content ul li div .caption p, #main #portfolio .item ul li div .caption p {
+              color: #f3f3f3; }
+  #main #team {
+    z-index: 500;
+    position: relative; }
+    #main #team .section-title {
       width: 100%;
-      color: #222222;
-      font-size: 48px;
-      margin: 0 auto;
-      text-align: center;
-      margin-top: 150px; }
-    #main #contact .section-title p {
-      width: 100%;
-      color: #2a2f55;
-      font-size: 24px;
-      margin: 0 auto;
-      text-align: center;
-      margin-bottom: 150px; }
-  #main #contact .section-content .info {
-    display: block;
-    float: left;
-    width: 100%;
-    height: 100%; }
-    #main #contact .section-content .info p {
-      color: #f3f3f3;
+      height: auto;
+      display: block; }
+      #main #team .section-title h1 {
+        width: 100%;
+        color: #222222;
+        font-size: 48px;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 150px; }
+      #main #team .section-title p {
+        width: 100%;
+        color: #2a2f55;
+        font-size: 24px;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 150px; }
+    #main #team .section-content .about > p {
       width: 65%;
+      color: #f3f3f3;
+      background-color: #1e1e42;
       margin: 0 auto;
-      margin-bottom: 2px;
       padding: 25px 17.5%;
       text-align: center;
-      background-color: #1e1e42; }
-    #main #contact .section-content .info .details {
-      background-color: #2a2f55;
-      display: inline-block;
-      width: 65%;
-      height: auto;
-      margin: 0 auto;
-      padding: 25px 17.5%; }
-      #main #contact .section-content .info .details address {
-        color: #f3f3f3;
-        width: 48%;
-        height: 100%; }
-      #main #contact .section-content .info .details .left {
-        float: left;
-        text-align: right; }
-        #main #contact .section-content .info .details .left em {
-          float: right;
-          display: block; }
-      #main #contact .section-content .info .details .right {
-        float: right !important;
-        text-align: left; }
-        #main #contact .section-content .info .details .right span {
-          float: left !important;
-          display: block; }
-        #main #contact .section-content .info .details .right a {
-          float: left !important;
+      overflow: hidden;
+      display: inline-block; }
+    #main #team .section-content .about .team > ul {
+      column-count: 4;
+      column-gap: 0px;
+      list-style-type: none;
+      margin: 0;
+      padding: 0; }
+      #main #team .section-content .about .team > ul > li:first-child {
+        background: url("https://images.pexels.com/photos/428339/pexels-photo-428339.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb") center center no-repeat; }
+      #main #team .section-content .about .team > ul > li:nth-child(2) {
+        background: url("https://images.pexels.com/photos/307847/pexels-photo-307847.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb") center center no-repeat; }
+      #main #team .section-content .about .team > ul > li:nth-child(3) {
+        background: url("https://images.pexels.com/photos/450271/pexels-photo-450271.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb") center center no-repeat; }
+      #main #team .section-content .about .team > ul > li:nth-child(4) {
+        background: url("https://images.pexels.com/photos/57690/pexels-photo-57690.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb") center center no-repeat; }
+      #main #team .section-content .about .team > ul > li {
+        width: 100%;
+        height: 450px;
+        margin: 0 auto;
+        padding: 0;
+        background-size: cover;
+        overflow: hidden;
+        position: relative;
+        transition: .5s; }
+        #main #team .section-content .about .team > ul > li:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-image: linear-gradient(to bottom right, rgba(42, 47, 85, 0.7), rgba(42, 8, 69, 0.7));
+          overflow: hidden;
+          transition: .5s; }
+        #main #team .section-content .about .team > ul > li:hover .thumbnail {
           display: block;
-          text-decoration: none;
-          color: #888888; }
-  #main #contact .section-content .map iframe {
-    width: 100%; }
+          transition: .5s; }
+        #main #team .section-content .about .team > ul > li:hover:before {
+          background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+          transition: .5s; }
+        #main #team .section-content .about .team > ul > li .thumbnail {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+          width: 100%;
+          height: 50%;
+          text-align: center;
+          display: none;
+          transition: .5s; }
+          #main #team .section-content .about .team > ul > li .thumbnail a img {
+            display: none; }
+          #main #team .section-content .about .team > ul > li .thumbnail .caption {
+            display: block;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 100%;
+            height: 75%;
+            text-align: center; }
+            #main #team .section-content .about .team > ul > li .thumbnail .caption h3 {
+              width: 80%;
+              margin: 10px auto;
+              color: #f3f3f3; }
+            #main #team .section-content .about .team > ul > li .thumbnail .caption .meta {
+              color: #f3f3f3;
+              font-weight: 400; }
+            #main #team .section-content .about .team > ul > li .thumbnail .caption p {
+              width: 80%;
+              margin: 5px auto;
+              color: #f3f3f3; }
+            #main #team .section-content .about .team > ul > li .thumbnail .caption ul {
+              column-count: 3;
+              column-gap: 5px;
+              list-style-type: none;
+              margin: 10px;
+              padding: 0; }
+              #main #team .section-content .about .team > ul > li .thumbnail .caption ul li a em {
+                width: 15px;
+                height: 15px; }
+  #main #contact {
+    z-index: 500;
+    position: relative; }
+    #main #contact .section-title {
+      width: 100%;
+      height: auto;
+      display: block; }
+      #main #contact .section-title h1 {
+        width: 100%;
+        color: #222222;
+        font-size: 48px;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 150px; }
+      #main #contact .section-title p {
+        width: 100%;
+        color: #2a2f55;
+        font-size: 24px;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 150px; }
+    #main #contact .section-content .info {
+      display: block;
+      float: left;
+      width: 100%;
+      height: 100%; }
+      #main #contact .section-content .info p {
+        color: #f3f3f3;
+        width: 65%;
+        margin: 0 auto;
+        margin-bottom: 2px;
+        padding: 25px 17.5%;
+        text-align: center;
+        background-color: #1e1e42; }
+      #main #contact .section-content .info .details {
+        background-color: #2a2f55;
+        display: inline-block;
+        width: 65%;
+        height: auto;
+        margin: 0 auto;
+        padding: 25px 17.5%; }
+        #main #contact .section-content .info .details address {
+          color: #f3f3f3;
+          width: 48%;
+          height: 100%; }
+        #main #contact .section-content .info .details .left {
+          float: left;
+          text-align: right; }
+          #main #contact .section-content .info .details .left em {
+            float: right;
+            display: block; }
+        #main #contact .section-content .info .details .right {
+          float: right !important;
+          text-align: left; }
+          #main #contact .section-content .info .details .right span {
+            float: left !important;
+            display: block; }
+          #main #contact .section-content .info .details .right a {
+            float: left !important;
+            display: block;
+            text-decoration: none;
+            color: #888888; }
+    #main #contact .section-content .map iframe {
+      width: 100%; }
 
 .footer {
   background-color: #2a2f55;
@@ -494,6 +511,7 @@ section {
       font-size: 14px;
       display: inline-block; }
     .footer div ul {
+      z-index: 0;
       list-style: none;
       position: relative;
       width: 65%;
@@ -502,8 +520,9 @@ section {
       padding: 0 17.5%;
       display: flex;
       justify-content: center;
-      background-color: #1e1e42; }
-      .footer div ul li {
+      background-color: #1e1e42;
+      border-top: 50px #888888; }
+      .footer div ul li .thumbnail {
         margin: 25px 50px;
         padding: 0;
         position: relative;
@@ -518,8 +537,8 @@ section {
         background-position: center center;
         text-align: center;
         opacity: 1;
-        transition: .5s; }
-        .footer div ul li:before {
+        transition: opacity .5s ease-in-out; }
+        .footer div ul li .thumbnail:before {
           content: '';
           position: absolute;
           overflow: hidden;
@@ -527,14 +546,11 @@ section {
           bottom: 0;
           left: 0;
           right: 0; }
-        .footer div ul li:hover {
-          opacity: 0.5;
-          transition: .5s; }
-      .footer div ul li:nth-child(1) {
+      .footer div ul li:nth-of-type(1) {
         background-image: url("https://drive.google.com/uc?export=view&id=0Bwu5EGqxLm53ZXI5VUJVdVRvSFE"); }
-      .footer div ul li:nth-child(2) {
+      .footer div ul li:nth-of-type(2) {
         background-image: url("https://drive.google.com/uc?export=view&id=0Bwu5EGqxLm53U1ZJOGFiVTNDbVk"); }
-      .footer div ul li:nth-child(3) {
+      .footer div ul li:nth-of-type(3) {
         background-image: url("https://drive.google.com/uc?export=view&id=0Bwu5EGqxLm53aEpER3dpNkg4dE0"); }
 
 .scroll-top {
@@ -542,8 +558,28 @@ section {
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: url("https://drive.google.com/uc?export=view&id=0Bwu5EGqxLm53Yk5jNFZaT1JLdkU");
+  background: url("https://drive.google.com/uc?export=view&id=0Bwu5EGqxLm53Yk5jNFZaT1JLdkU") no-repeat center center/90px 90px;
+  background-size: cover;
   height: 35px;
-  width: 35px; }
+  margin: 15px auto;
+  width: 35px;
+  margin-top: 250px;
+  z-index: 0;
+  -ms-transform: rotate(180deg);
+  /* IE 9 */
+  -webkit-transform: rotate(180deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(180deg);
+  transition: .25s;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden; }
+  .scroll-top:hover {
+    -ms-transform: rotate(180deg) translateY(2px);
+    /* IE 9 */
+    -webkit-transform: rotate(180deg) translateY(2px);
+    /* Chrome, Safari, Opera */
+    transform: rotate(180deg) translateY(2px);
+    transition: .25s; }
 
 /*# sourceMappingURL=style.css.map */
