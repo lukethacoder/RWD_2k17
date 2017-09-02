@@ -260,23 +260,23 @@ section {
         margin: 0 auto;
         text-align: center;
         margin-bottom: 150px; }
-    #main #portfolio .section-content ul, #main #portfolio .item ul {
+    #main #portfolio .section-content ul {
       column-count: 4;
       column-gap: 0px;
       list-style-type: none;
       margin: 0;
       padding: 0; }
-      #main #portfolio .section-content ul li, #main #portfolio .item ul li {
+      #main #portfolio .section-content ul li:nth-of-type(1) {
+        background: url("https://images.pexels.com/photos/209151/pexels-photo-209151.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb") center center no-repeat;
         width: 100%;
         height: 350px;
         margin: 0 auto;
         padding: 0;
-        background: url(test.jpg) center center no-repeat;
         background-size: 125%;
         overflow: hidden;
         position: relative;
         transition: .5s; }
-        #main #portfolio .section-content ul li:before, #main #portfolio .item ul li:before {
+        #main #portfolio .section-content ul li:nth-of-type(1):before {
           content: '';
           position: absolute;
           top: 0;
@@ -286,13 +286,13 @@ section {
           background-image: linear-gradient(to bottom right, rgba(42, 47, 85, 0.7), rgba(42, 8, 69, 0.7));
           overflow: hidden;
           transition: .5s; }
-        #main #portfolio .section-content ul li:hover, #main #portfolio .item ul li:hover {
+        #main #portfolio .section-content ul li:nth-of-type(1):hover {
           background-size: 150%;
           transition: .5s; }
-          #main #portfolio .section-content ul li:hover:before, #main #portfolio .item ul li:hover:before {
+          #main #portfolio .section-content ul li:nth-of-type(1):hover:before {
             background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
             transition: .5s; }
-        #main #portfolio .section-content ul li div, #main #portfolio .item ul li div {
+        #main #portfolio .section-content ul li:nth-of-type(1) div {
           position: absolute;
           top: 0;
           bottom: 0;
@@ -302,15 +302,711 @@ section {
           width: 100%;
           height: 50%;
           text-align: center; }
-          #main #portfolio .section-content ul li div .screenshot a img, #main #portfolio .item ul li div .screenshot a img {
+          #main #portfolio .section-content ul li:nth-of-type(1) div .screenshot a img {
             display: none; }
-          #main #portfolio .section-content ul li div .caption, #main #portfolio .item ul li div .caption {
+          #main #portfolio .section-content ul li:nth-of-type(1) div .caption {
             text-align: center; }
-            #main #portfolio .section-content ul li div .caption h2 a, #main #portfolio .item ul li div .caption h2 a {
+            #main #portfolio .section-content ul li:nth-of-type(1) div .caption h2 a {
               color: #f3f3f3;
               text-decoration: none;
               font-size: 28px; }
-            #main #portfolio .section-content ul li div .caption p, #main #portfolio .item ul li div .caption p {
+            #main #portfolio .section-content ul li:nth-of-type(1) div .caption p {
+              color: #f3f3f3; }
+      #main #portfolio .section-content ul li:nth-of-type(2) {
+        background: url("https://images.pexels.com/photos/290657/pexels-photo-290657.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb") center center no-repeat;
+        width: 100%;
+        height: 350px;
+        margin: 0 auto;
+        padding: 0;
+        background-size: 125%;
+        overflow: hidden;
+        position: relative;
+        transition: .5s; }
+        #main #portfolio .section-content ul li:nth-of-type(2):before {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-image: linear-gradient(to bottom right, rgba(42, 47, 85, 0.7), rgba(42, 8, 69, 0.7));
+          overflow: hidden;
+          transition: .5s; }
+        #main #portfolio .section-content ul li:nth-of-type(2):hover {
+          background-size: 150%;
+          transition: .5s; }
+          #main #portfolio .section-content ul li:nth-of-type(2):hover:before {
+            background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+            transition: .5s; }
+        #main #portfolio .section-content ul li:nth-of-type(2) div {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+          width: 100%;
+          height: 50%;
+          text-align: center; }
+          #main #portfolio .section-content ul li:nth-of-type(2) div .screenshot a img {
+            display: none; }
+          #main #portfolio .section-content ul li:nth-of-type(2) div .caption {
+            text-align: center; }
+            #main #portfolio .section-content ul li:nth-of-type(2) div .caption h2 a {
+              color: #f3f3f3;
+              text-decoration: none;
+              font-size: 28px; }
+            #main #portfolio .section-content ul li:nth-of-type(2) div .caption p {
+              color: #f3f3f3; }
+      #main #portfolio .section-content ul li:nth-of-type(3) {
+        background: url("https://images.pexels.com/photos/7764/pexels-photo.jpg?w=1260&h=750&auto=compress&cs=tinysrgb") center center no-repeat;
+        width: 100%;
+        height: 350px;
+        margin: 0 auto;
+        padding: 0;
+        background-size: 125%;
+        overflow: hidden;
+        position: relative;
+        transition: .5s; }
+        #main #portfolio .section-content ul li:nth-of-type(3):before {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-image: linear-gradient(to bottom right, rgba(42, 47, 85, 0.7), rgba(42, 8, 69, 0.7));
+          overflow: hidden;
+          transition: .5s; }
+        #main #portfolio .section-content ul li:nth-of-type(3):hover {
+          background-size: 150%;
+          transition: .5s; }
+          #main #portfolio .section-content ul li:nth-of-type(3):hover:before {
+            background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+            transition: .5s; }
+        #main #portfolio .section-content ul li:nth-of-type(3) div {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+          width: 100%;
+          height: 50%;
+          text-align: center; }
+          #main #portfolio .section-content ul li:nth-of-type(3) div .screenshot a img {
+            display: none; }
+          #main #portfolio .section-content ul li:nth-of-type(3) div .caption {
+            text-align: center; }
+            #main #portfolio .section-content ul li:nth-of-type(3) div .caption h2 a {
+              color: #f3f3f3;
+              text-decoration: none;
+              font-size: 28px; }
+            #main #portfolio .section-content ul li:nth-of-type(3) div .caption p {
+              color: #f3f3f3; }
+      #main #portfolio .section-content ul li:nth-of-type(4) {
+        background: url("https://images.pexels.com/photos/34406/pexels-photo.jpg?w=1260&h=750&auto=compress&cs=tinysrgb") center center no-repeat;
+        width: 100%;
+        height: 350px;
+        margin: 0 auto;
+        padding: 0;
+        background-size: 125%;
+        overflow: hidden;
+        position: relative;
+        transition: .5s; }
+        #main #portfolio .section-content ul li:nth-of-type(4):before {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-image: linear-gradient(to bottom right, rgba(42, 47, 85, 0.7), rgba(42, 8, 69, 0.7));
+          overflow: hidden;
+          transition: .5s; }
+        #main #portfolio .section-content ul li:nth-of-type(4):hover {
+          background-size: 150%;
+          transition: .5s; }
+          #main #portfolio .section-content ul li:nth-of-type(4):hover:before {
+            background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+            transition: .5s; }
+        #main #portfolio .section-content ul li:nth-of-type(4) div {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+          width: 100%;
+          height: 50%;
+          text-align: center; }
+          #main #portfolio .section-content ul li:nth-of-type(4) div .screenshot a img {
+            display: none; }
+          #main #portfolio .section-content ul li:nth-of-type(4) div .caption {
+            text-align: center; }
+            #main #portfolio .section-content ul li:nth-of-type(4) div .caption h2 a {
+              color: #f3f3f3;
+              text-decoration: none;
+              font-size: 28px; }
+            #main #portfolio .section-content ul li:nth-of-type(4) div .caption p {
+              color: #f3f3f3; }
+      #main #portfolio .section-content ul li:nth-of-type(5) {
+        background: url("https://images.pexels.com/photos/290657/pexels-photo-290657.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb") center center no-repeat;
+        width: 100%;
+        height: 350px;
+        margin: 0 auto;
+        padding: 0;
+        background-size: 125%;
+        overflow: hidden;
+        position: relative;
+        transition: .5s; }
+        #main #portfolio .section-content ul li:nth-of-type(5):before {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-image: linear-gradient(to bottom right, rgba(42, 47, 85, 0.7), rgba(42, 8, 69, 0.7));
+          overflow: hidden;
+          transition: .5s; }
+        #main #portfolio .section-content ul li:nth-of-type(5):hover {
+          background-size: 150%;
+          transition: .5s; }
+          #main #portfolio .section-content ul li:nth-of-type(5):hover:before {
+            background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+            transition: .5s; }
+        #main #portfolio .section-content ul li:nth-of-type(5) div {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+          width: 100%;
+          height: 50%;
+          text-align: center; }
+          #main #portfolio .section-content ul li:nth-of-type(5) div .screenshot a img {
+            display: none; }
+          #main #portfolio .section-content ul li:nth-of-type(5) div .caption {
+            text-align: center; }
+            #main #portfolio .section-content ul li:nth-of-type(5) div .caption h2 a {
+              color: #f3f3f3;
+              text-decoration: none;
+              font-size: 28px; }
+            #main #portfolio .section-content ul li:nth-of-type(5) div .caption p {
+              color: #f3f3f3; }
+      #main #portfolio .section-content ul li:nth-of-type(6) {
+        background: url("https://images.pexels.com/photos/257904/pexels-photo-257904.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb") center center no-repeat;
+        width: 100%;
+        height: 350px;
+        margin: 0 auto;
+        padding: 0;
+        background-size: 125%;
+        overflow: hidden;
+        position: relative;
+        transition: .5s; }
+        #main #portfolio .section-content ul li:nth-of-type(6):before {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-image: linear-gradient(to bottom right, rgba(42, 47, 85, 0.7), rgba(42, 8, 69, 0.7));
+          overflow: hidden;
+          transition: .5s; }
+        #main #portfolio .section-content ul li:nth-of-type(6):hover {
+          background-size: 150%;
+          transition: .5s; }
+          #main #portfolio .section-content ul li:nth-of-type(6):hover:before {
+            background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+            transition: .5s; }
+        #main #portfolio .section-content ul li:nth-of-type(6) div {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+          width: 100%;
+          height: 50%;
+          text-align: center; }
+          #main #portfolio .section-content ul li:nth-of-type(6) div .screenshot a img {
+            display: none; }
+          #main #portfolio .section-content ul li:nth-of-type(6) div .caption {
+            text-align: center; }
+            #main #portfolio .section-content ul li:nth-of-type(6) div .caption h2 a {
+              color: #f3f3f3;
+              text-decoration: none;
+              font-size: 28px; }
+            #main #portfolio .section-content ul li:nth-of-type(6) div .caption p {
+              color: #f3f3f3; }
+      #main #portfolio .section-content ul li:nth-of-type(7) {
+        background: url("https://images.pexels.com/photos/161154/stained-glass-spiral-circle-pattern-161154.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb") center center no-repeat;
+        width: 100%;
+        height: 350px;
+        margin: 0 auto;
+        padding: 0;
+        background-size: 125%;
+        overflow: hidden;
+        position: relative;
+        transition: .5s; }
+        #main #portfolio .section-content ul li:nth-of-type(7):before {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-image: linear-gradient(to bottom right, rgba(42, 47, 85, 0.7), rgba(42, 8, 69, 0.7));
+          overflow: hidden;
+          transition: .5s; }
+        #main #portfolio .section-content ul li:nth-of-type(7):hover {
+          background-size: 150%;
+          transition: .5s; }
+          #main #portfolio .section-content ul li:nth-of-type(7):hover:before {
+            background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+            transition: .5s; }
+        #main #portfolio .section-content ul li:nth-of-type(7) div {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+          width: 100%;
+          height: 50%;
+          text-align: center; }
+          #main #portfolio .section-content ul li:nth-of-type(7) div .screenshot a img {
+            display: none; }
+          #main #portfolio .section-content ul li:nth-of-type(7) div .caption {
+            text-align: center; }
+            #main #portfolio .section-content ul li:nth-of-type(7) div .caption h2 a {
+              color: #f3f3f3;
+              text-decoration: none;
+              font-size: 28px; }
+            #main #portfolio .section-content ul li:nth-of-type(7) div .caption p {
+              color: #f3f3f3; }
+      #main #portfolio .section-content ul li:nth-of-type(8) {
+        background: url("https://images.pexels.com/photos/260998/pexels-photo-260998.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb") center center no-repeat;
+        width: 100%;
+        height: 350px;
+        margin: 0 auto;
+        padding: 0;
+        background-size: 125%;
+        overflow: hidden;
+        position: relative;
+        transition: .5s; }
+        #main #portfolio .section-content ul li:nth-of-type(8):before {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-image: linear-gradient(to bottom right, rgba(42, 47, 85, 0.7), rgba(42, 8, 69, 0.7));
+          overflow: hidden;
+          transition: .5s; }
+        #main #portfolio .section-content ul li:nth-of-type(8):hover {
+          background-size: 150%;
+          transition: .5s; }
+          #main #portfolio .section-content ul li:nth-of-type(8):hover:before {
+            background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+            transition: .5s; }
+        #main #portfolio .section-content ul li:nth-of-type(8) div {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+          width: 100%;
+          height: 50%;
+          text-align: center; }
+          #main #portfolio .section-content ul li:nth-of-type(8) div .screenshot a img {
+            display: none; }
+          #main #portfolio .section-content ul li:nth-of-type(8) div .caption {
+            text-align: center; }
+            #main #portfolio .section-content ul li:nth-of-type(8) div .caption h2 a {
+              color: #f3f3f3;
+              text-decoration: none;
+              font-size: 28px; }
+            #main #portfolio .section-content ul li:nth-of-type(8) div .caption p {
+              color: #f3f3f3; }
+    #main #portfolio .item ul {
+      column-count: 4;
+      column-gap: 0px;
+      list-style-type: none;
+      margin: 0;
+      padding: 0; }
+      #main #portfolio .item ul li:nth-of-type(1) {
+        background: url("https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb") center center no-repeat;
+        width: 100%;
+        height: 350px;
+        margin: 0 auto;
+        padding: 0;
+        background-size: 125%;
+        overflow: hidden;
+        position: relative;
+        transition: .5s; }
+        #main #portfolio .item ul li:nth-of-type(1):before {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-image: linear-gradient(to bottom right, rgba(42, 47, 85, 0.7), rgba(42, 8, 69, 0.7));
+          overflow: hidden;
+          transition: .5s; }
+        #main #portfolio .item ul li:nth-of-type(1):hover {
+          background-size: 150%;
+          transition: .5s; }
+          #main #portfolio .item ul li:nth-of-type(1):hover:before {
+            background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+            transition: .5s; }
+        #main #portfolio .item ul li:nth-of-type(1) div {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+          width: 100%;
+          height: 50%;
+          text-align: center; }
+          #main #portfolio .item ul li:nth-of-type(1) div .screenshot a img {
+            display: none; }
+          #main #portfolio .item ul li:nth-of-type(1) div .caption {
+            text-align: center; }
+            #main #portfolio .item ul li:nth-of-type(1) div .caption h2 a {
+              color: #f3f3f3;
+              text-decoration: none;
+              font-size: 28px; }
+            #main #portfolio .item ul li:nth-of-type(1) div .caption p {
+              color: #f3f3f3; }
+      #main #portfolio .item ul li:nth-of-type(2) {
+        background: url("https://images.pexels.com/photos/147413/twitter-facebook-together-exchange-of-information-147413.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb") center center no-repeat;
+        width: 100%;
+        height: 350px;
+        margin: 0 auto;
+        padding: 0;
+        background-size: 125%;
+        overflow: hidden;
+        position: relative;
+        transition: .5s; }
+        #main #portfolio .item ul li:nth-of-type(2):before {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-image: linear-gradient(to bottom right, rgba(42, 47, 85, 0.7), rgba(42, 8, 69, 0.7));
+          overflow: hidden;
+          transition: .5s; }
+        #main #portfolio .item ul li:nth-of-type(2):hover {
+          background-size: 150%;
+          transition: .5s; }
+          #main #portfolio .item ul li:nth-of-type(2):hover:before {
+            background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+            transition: .5s; }
+        #main #portfolio .item ul li:nth-of-type(2) div {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+          width: 100%;
+          height: 50%;
+          text-align: center; }
+          #main #portfolio .item ul li:nth-of-type(2) div .screenshot a img {
+            display: none; }
+          #main #portfolio .item ul li:nth-of-type(2) div .caption {
+            text-align: center; }
+            #main #portfolio .item ul li:nth-of-type(2) div .caption h2 a {
+              color: #f3f3f3;
+              text-decoration: none;
+              font-size: 28px; }
+            #main #portfolio .item ul li:nth-of-type(2) div .caption p {
+              color: #f3f3f3; }
+      #main #portfolio .item ul li:nth-of-type(3) {
+        background: url("https://images.pexels.com/photos/42153/pexels-photo-42153.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb") center center no-repeat;
+        width: 100%;
+        height: 350px;
+        margin: 0 auto;
+        padding: 0;
+        background-size: 125%;
+        overflow: hidden;
+        position: relative;
+        transition: .5s; }
+        #main #portfolio .item ul li:nth-of-type(3):before {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-image: linear-gradient(to bottom right, rgba(42, 47, 85, 0.7), rgba(42, 8, 69, 0.7));
+          overflow: hidden;
+          transition: .5s; }
+        #main #portfolio .item ul li:nth-of-type(3):hover {
+          background-size: 150%;
+          transition: .5s; }
+          #main #portfolio .item ul li:nth-of-type(3):hover:before {
+            background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+            transition: .5s; }
+        #main #portfolio .item ul li:nth-of-type(3) div {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+          width: 100%;
+          height: 50%;
+          text-align: center; }
+          #main #portfolio .item ul li:nth-of-type(3) div .screenshot a img {
+            display: none; }
+          #main #portfolio .item ul li:nth-of-type(3) div .caption {
+            text-align: center; }
+            #main #portfolio .item ul li:nth-of-type(3) div .caption h2 a {
+              color: #f3f3f3;
+              text-decoration: none;
+              font-size: 28px; }
+            #main #portfolio .item ul li:nth-of-type(3) div .caption p {
+              color: #f3f3f3; }
+      #main #portfolio .item ul li:nth-of-type(4) {
+        background: url("https://images.pexels.com/photos/188975/holocaust-memorial-berlin-holocaust-memorial-188975.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb") center center no-repeat;
+        width: 100%;
+        height: 350px;
+        margin: 0 auto;
+        padding: 0;
+        background-size: 125%;
+        overflow: hidden;
+        position: relative;
+        transition: .5s; }
+        #main #portfolio .item ul li:nth-of-type(4):before {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-image: linear-gradient(to bottom right, rgba(42, 47, 85, 0.7), rgba(42, 8, 69, 0.7));
+          overflow: hidden;
+          transition: .5s; }
+        #main #portfolio .item ul li:nth-of-type(4):hover {
+          background-size: 150%;
+          transition: .5s; }
+          #main #portfolio .item ul li:nth-of-type(4):hover:before {
+            background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+            transition: .5s; }
+        #main #portfolio .item ul li:nth-of-type(4) div {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+          width: 100%;
+          height: 50%;
+          text-align: center; }
+          #main #portfolio .item ul li:nth-of-type(4) div .screenshot a img {
+            display: none; }
+          #main #portfolio .item ul li:nth-of-type(4) div .caption {
+            text-align: center; }
+            #main #portfolio .item ul li:nth-of-type(4) div .caption h2 a {
+              color: #f3f3f3;
+              text-decoration: none;
+              font-size: 28px; }
+            #main #portfolio .item ul li:nth-of-type(4) div .caption p {
+              color: #f3f3f3; }
+      #main #portfolio .item ul li:nth-of-type(5) {
+        background: url("https://images.pexels.com/photos/567449/pexels-photo-567449.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb") center center no-repeat;
+        width: 100%;
+        height: 350px;
+        margin: 0 auto;
+        padding: 0;
+        background-size: 125%;
+        overflow: hidden;
+        position: relative;
+        transition: .5s; }
+        #main #portfolio .item ul li:nth-of-type(5):before {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-image: linear-gradient(to bottom right, rgba(42, 47, 85, 0.7), rgba(42, 8, 69, 0.7));
+          overflow: hidden;
+          transition: .5s; }
+        #main #portfolio .item ul li:nth-of-type(5):hover {
+          background-size: 150%;
+          transition: .5s; }
+          #main #portfolio .item ul li:nth-of-type(5):hover:before {
+            background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+            transition: .5s; }
+        #main #portfolio .item ul li:nth-of-type(5) div {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+          width: 100%;
+          height: 50%;
+          text-align: center; }
+          #main #portfolio .item ul li:nth-of-type(5) div .screenshot a img {
+            display: none; }
+          #main #portfolio .item ul li:nth-of-type(5) div .caption {
+            text-align: center; }
+            #main #portfolio .item ul li:nth-of-type(5) div .caption h2 a {
+              color: #f3f3f3;
+              text-decoration: none;
+              font-size: 28px; }
+            #main #portfolio .item ul li:nth-of-type(5) div .caption p {
+              color: #f3f3f3; }
+      #main #portfolio .item ul li:nth-of-type(6) {
+        background: url("https://images.pexels.com/photos/325702/pexels-photo-325702.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb") center center no-repeat;
+        width: 100%;
+        height: 350px;
+        margin: 0 auto;
+        padding: 0;
+        background-size: 125%;
+        overflow: hidden;
+        position: relative;
+        transition: .5s; }
+        #main #portfolio .item ul li:nth-of-type(6):before {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-image: linear-gradient(to bottom right, rgba(42, 47, 85, 0.7), rgba(42, 8, 69, 0.7));
+          overflow: hidden;
+          transition: .5s; }
+        #main #portfolio .item ul li:nth-of-type(6):hover {
+          background-size: 150%;
+          transition: .5s; }
+          #main #portfolio .item ul li:nth-of-type(6):hover:before {
+            background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+            transition: .5s; }
+        #main #portfolio .item ul li:nth-of-type(6) div {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+          width: 100%;
+          height: 50%;
+          text-align: center; }
+          #main #portfolio .item ul li:nth-of-type(6) div .screenshot a img {
+            display: none; }
+          #main #portfolio .item ul li:nth-of-type(6) div .caption {
+            text-align: center; }
+            #main #portfolio .item ul li:nth-of-type(6) div .caption h2 a {
+              color: #f3f3f3;
+              text-decoration: none;
+              font-size: 28px; }
+            #main #portfolio .item ul li:nth-of-type(6) div .caption p {
+              color: #f3f3f3; }
+      #main #portfolio .item ul li:nth-of-type(7) {
+        background: url("https://images.pexels.com/photos/34406/pexels-photo.jpg?w=1260&h=750&auto=compress&cs=tinysrgb") center center no-repeat;
+        width: 100%;
+        height: 350px;
+        margin: 0 auto;
+        padding: 0;
+        background-size: 125%;
+        overflow: hidden;
+        position: relative;
+        transition: .5s; }
+        #main #portfolio .item ul li:nth-of-type(7):before {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-image: linear-gradient(to bottom right, rgba(42, 47, 85, 0.7), rgba(42, 8, 69, 0.7));
+          overflow: hidden;
+          transition: .5s; }
+        #main #portfolio .item ul li:nth-of-type(7):hover {
+          background-size: 150%;
+          transition: .5s; }
+          #main #portfolio .item ul li:nth-of-type(7):hover:before {
+            background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+            transition: .5s; }
+        #main #portfolio .item ul li:nth-of-type(7) div {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+          width: 100%;
+          height: 50%;
+          text-align: center; }
+          #main #portfolio .item ul li:nth-of-type(7) div .screenshot a img {
+            display: none; }
+          #main #portfolio .item ul li:nth-of-type(7) div .caption {
+            text-align: center; }
+            #main #portfolio .item ul li:nth-of-type(7) div .caption h2 a {
+              color: #f3f3f3;
+              text-decoration: none;
+              font-size: 28px; }
+            #main #portfolio .item ul li:nth-of-type(7) div .caption p {
+              color: #f3f3f3; }
+      #main #portfolio .item ul li:nth-of-type(8) {
+        background: url("https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb") center center no-repeat;
+        width: 100%;
+        height: 350px;
+        margin: 0 auto;
+        padding: 0;
+        background-size: 125%;
+        overflow: hidden;
+        position: relative;
+        transition: .5s; }
+        #main #portfolio .item ul li:nth-of-type(8):before {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-image: linear-gradient(to bottom right, rgba(42, 47, 85, 0.7), rgba(42, 8, 69, 0.7));
+          overflow: hidden;
+          transition: .5s; }
+        #main #portfolio .item ul li:nth-of-type(8):hover {
+          background-size: 150%;
+          transition: .5s; }
+          #main #portfolio .item ul li:nth-of-type(8):hover:before {
+            background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+            transition: .5s; }
+        #main #portfolio .item ul li:nth-of-type(8) div {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+          width: 100%;
+          height: 50%;
+          text-align: center; }
+          #main #portfolio .item ul li:nth-of-type(8) div .screenshot a img {
+            display: none; }
+          #main #portfolio .item ul li:nth-of-type(8) div .caption {
+            text-align: center; }
+            #main #portfolio .item ul li:nth-of-type(8) div .caption h2 a {
+              color: #f3f3f3;
+              text-decoration: none;
+              font-size: 28px; }
+            #main #portfolio .item ul li:nth-of-type(8) div .caption p {
               color: #f3f3f3; }
   #main #team {
     z-index: 500;
@@ -536,7 +1232,7 @@ section {
         background-repeat: no-repeat;
         background-position: center center;
         opacity: 1;
-        transition: opacity .5s ease-in-out; }
+        transition: .5s ease-in-out; }
         .footer div ul li:before {
           content: '';
           position: absolute;
@@ -546,7 +1242,8 @@ section {
           left: 0;
           right: 0; }
         .footer div ul li:hover {
-          transition: opacity .5s ease-in-out; }
+          opacity: 0.5;
+          transition: .5s ease-in-out; }
       .footer div ul li:nth-of-type(1) {
         background-image: url("https://drive.google.com/uc?export=view&id=0Bwu5EGqxLm53ZXI5VUJVdVRvSFE"); }
       .footer div ul li:nth-of-type(2) {
