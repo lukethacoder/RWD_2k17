@@ -520,9 +520,9 @@ section {
       padding: 0 17.5%;
       display: flex;
       justify-content: center;
-      background-color: #1e1e42;
-      border-top: 50px #888888; }
-      .footer div ul li .thumbnail {
+      background-color: #2a2f55;
+      border-top: 50px solid #1e1e42; }
+      .footer div ul li {
         margin: 25px 50px;
         padding: 0;
         position: relative;
@@ -535,10 +535,9 @@ section {
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
-        text-align: center;
         opacity: 1;
         transition: opacity .5s ease-in-out; }
-        .footer div ul li .thumbnail:before {
+        .footer div ul li:before {
           content: '';
           position: absolute;
           overflow: hidden;
@@ -546,6 +545,8 @@ section {
           bottom: 0;
           left: 0;
           right: 0; }
+        .footer div ul li:hover {
+          transition: opacity .5s ease-in-out; }
       .footer div ul li:nth-of-type(1) {
         background-image: url("https://drive.google.com/uc?export=view&id=0Bwu5EGqxLm53ZXI5VUJVdVRvSFE"); }
       .footer div ul li:nth-of-type(2) {
@@ -563,7 +564,7 @@ section {
   height: 35px;
   margin: 15px auto;
   width: 35px;
-  margin-top: 250px;
+  margin: 88px auto;
   z-index: 0;
   -ms-transform: rotate(180deg);
   /* IE 9 */
@@ -575,11 +576,11 @@ section {
   white-space: nowrap;
   overflow: hidden; }
   .scroll-top:hover {
-    -ms-transform: rotate(180deg) translateY(2px);
+    -ms-transform: rotate(180deg) translateY(3px);
     /* IE 9 */
-    -webkit-transform: rotate(180deg) translateY(2px);
+    -webkit-transform: rotate(180deg) translateY(3px);
     /* Chrome, Safari, Opera */
-    transform: rotate(180deg) translateY(2px);
+    transform: rotate(180deg) translateY(3px);
     transition: .25s; }
 
 /*# sourceMappingURL=style.css.map */

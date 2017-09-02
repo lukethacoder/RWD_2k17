@@ -679,10 +679,9 @@ section {
       padding: 0 ((100% - $page_width) / 2);
       display: flex;
       justify-content: center;
-      background-color: $c_06;
-      border-top: 50px $c_05;
+      background-color: $c_03;
+      border-top: 50px solid $c_06;
       li {
-        .thumbnail {
           margin: 25px 50px;
           padding: 0;
           position: relative;
@@ -695,7 +694,6 @@ section {
           background-size: cover;
           background-repeat: no-repeat;
           background-position: center center;
-          text-align: center;
           opacity: 1;
           transition: opacity .5s ease-in-out;
           &:before {
@@ -707,17 +705,34 @@ section {
             left: 0;
             right: 0;
           }
-        }
+          &:hover {
+            transition: opacity .5s ease-in-out;
+          }
       }
-      li:nth-of-type(1){
+      li:nth-of-type(1) {
           background-image: url('https://drive.google.com/uc?export=view&id=0Bwu5EGqxLm53ZXI5VUJVdVRvSFE');
       } 
-      li:nth-of-type(2){
+      li:nth-of-type(2) {
           background-image: url('https://drive.google.com/uc?export=view&id=0Bwu5EGqxLm53U1ZJOGFiVTNDbVk');
       }
-      li:nth-of-type(3){
+      li:nth-of-type(3) {
           background-image: url('https://drive.google.com/uc?export=view&id=0Bwu5EGqxLm53aEpER3dpNkg4dE0');
       }
+      // li:nth-of-type(1) {
+      //   a {
+      //     background-image: url('https://drive.google.com/uc?export=view&id=0Bwu5EGqxLm53ZXI5VUJVdVRvSFE');
+      //   }
+      // } 
+      // li:nth-of-type(2) {
+      //   a {
+      //     background-image: url('https://drive.google.com/uc?export=view&id=0Bwu5EGqxLm53U1ZJOGFiVTNDbVk');
+      //   }
+      // }
+      // li:nth-of-type(3) {
+      //   a {
+      //     background-image: url('https://drive.google.com/uc?export=view&id=0Bwu5EGqxLm53aEpER3dpNkg4dE0');
+      //   }
+      // }
     }
 
   }
@@ -733,7 +748,7 @@ section {
   height: 35px;
   margin: 15px auto;
   width: 35px;
-  margin-top: 250px;
+  margin: 88px auto;
   z-index: 0;
   -ms-transform: rotate(180deg); /* IE 9 */
   -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
@@ -743,9 +758,9 @@ section {
   white-space: nowrap;
   overflow: hidden;
   &:hover {
-    -ms-transform: rotate(180deg) translateY(2px); /* IE 9 */
-    -webkit-transform: rotate(180deg) translateY(2px); /* Chrome, Safari, Opera */
-    transform: rotate(180deg) translateY(2px);
+    -ms-transform: rotate(180deg) translateY(3px); /* IE 9 */
+    -webkit-transform: rotate(180deg) translateY(3px); /* Chrome, Safari, Opera */
+    transform: rotate(180deg) translateY(3px);
     transition: .25s;
   }
 }
