@@ -331,7 +331,6 @@ section {
         margin-bottom: 150px;
       }
     }
-
         .section-content {
             $imagesGroup1:
             "https://images.pexels.com/photos/209151/pexels-photo-209151.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb",
@@ -407,7 +406,6 @@ section {
                 }
                 @each $img in $img1 {
                     li:nth-of-type(#{$nthCount}) {
-                        // SET SIZE OF IMAGE YOU WANT
                         display: block;
                         width: 100%;
                         height: 350px;
@@ -421,15 +419,7 @@ section {
                             background-image: linear-gradient(to bottom right,$g_02,$g_02);
                             transition: .5s;
                           }
-                        }
-                        .screenshot {
-                            a {
-                                
-                                img {
-                                    display: none;
-                                }
-                            }
-                        }                        
+                        }                      
                     }
                     $nthCount: $nthCount + 1;
                 }
@@ -463,6 +453,7 @@ section {
                 overflow: hidden;
                 position: relative;
                 transition: .5s;
+                display: block;
                 &:before {
                   content: '';
                   position: absolute;
@@ -508,10 +499,6 @@ section {
               }
               @each $img in $img {
                   li:nth-of-type(#{$nthCount}) {
-                      // SET SIZE OF IMAGE YOU WANT
-                      display: block;
-                      width: 100%;
-                      height: 350px;
                       background: url(#{nth($img, 1)}) no-repeat center center;
                       background-size: 125%;
                       &:hover {
