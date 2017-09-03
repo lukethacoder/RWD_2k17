@@ -1,3 +1,18 @@
+/* Table of Contents
+  L-15 font import
+  L-17 global/body+html styling
+  L-28 nav styling
+  L-76 #main styling
+    L-83 home styling
+    L-178 introduction styling
+    L-260 portfolio styling
+    L-567 about (#team) styling
+    L-724 contact styling
+  L-789 footer styling
+  L-852 scroll-top styling
+  Lines Total - 879
+*/
+/* import "Montserrat" from google fonts */
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700");
 html, body {
   width: 100%;
@@ -10,6 +25,7 @@ section {
   margin: 0 auto;
   padding: 0; }
 
+ /* nav */
 .navbar {
   background-color: #2a2f55;
   width: 100%;
@@ -33,10 +49,7 @@ section {
         padding: 0;
         width: auto;
         height: 45px;
-        background: url("https://drive.google.com/uc?export=view&id=0Bwu5EGqxLm53SlE5X3BtSGsyZWs");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center center; }
+        background: url("https://drive.google.com/uc?export=view&id=0Bwu5EGqxLm53SlE5X3BtSGsyZWs") no-repeat center center/contain; }
     .navbar .inner .nav {
       margin: 0 auto;
       height: 75px;
@@ -45,13 +58,20 @@ section {
         margin: 0;
         list-style: none; }
       .navbar .inner .nav li {
-        display: inline-block;
-        margin-right: 15px; }
+        margin: 0;
+        display: inline-block; }
       .navbar .inner .nav a {
+        margin: 0;
         display: block;
         text-decoration: none;
         line-height: 75px;
-        color: #f3f3f3; }
+        padding: 0 10px;
+        color: #f3f3f3;
+        transition: .5s; }
+        .navbar .inner .nav a:hover {
+          background-color: #1e1e42;
+          transition: .5s;
+          border-bottom: 50px solid #2a2f55; }
 
 #main {
   margin: 0 auto;
@@ -65,8 +85,7 @@ section {
     height: 850px;
     margin: 0 auto;
     padding: 0;
-    background: url("https://images.pexels.com/photos/248159/pexels-photo-248159.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb") center center no-repeat;
-    background-size: cover;
+    background: url("https://images.pexels.com/photos/248159/pexels-photo-248159.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb") center center no-repeat/cover;
     overflow: hidden;
     position: relative;
     z-index: 500; }
@@ -316,8 +335,6 @@ section {
           #main #portfolio .section-content .thumbnails li:nth-of-type(1):hover:before {
             background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
             transition: .5s; }
-        #main #portfolio .section-content .thumbnails li:nth-of-type(1) .screenshot a img {
-          display: none; }
       #main #portfolio .section-content .thumbnails li:nth-of-type(2) {
         display: block;
         width: 100%;
@@ -330,8 +347,6 @@ section {
           #main #portfolio .section-content .thumbnails li:nth-of-type(2):hover:before {
             background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
             transition: .5s; }
-        #main #portfolio .section-content .thumbnails li:nth-of-type(2) .screenshot a img {
-          display: none; }
       #main #portfolio .section-content .thumbnails li:nth-of-type(3) {
         display: block;
         width: 100%;
@@ -344,8 +359,6 @@ section {
           #main #portfolio .section-content .thumbnails li:nth-of-type(3):hover:before {
             background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
             transition: .5s; }
-        #main #portfolio .section-content .thumbnails li:nth-of-type(3) .screenshot a img {
-          display: none; }
       #main #portfolio .section-content .thumbnails li:nth-of-type(4) {
         display: block;
         width: 100%;
@@ -358,8 +371,6 @@ section {
           #main #portfolio .section-content .thumbnails li:nth-of-type(4):hover:before {
             background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
             transition: .5s; }
-        #main #portfolio .section-content .thumbnails li:nth-of-type(4) .screenshot a img {
-          display: none; }
       #main #portfolio .section-content .thumbnails li:nth-of-type(5) {
         display: block;
         width: 100%;
@@ -372,8 +383,6 @@ section {
           #main #portfolio .section-content .thumbnails li:nth-of-type(5):hover:before {
             background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
             transition: .5s; }
-        #main #portfolio .section-content .thumbnails li:nth-of-type(5) .screenshot a img {
-          display: none; }
       #main #portfolio .section-content .thumbnails li:nth-of-type(6) {
         display: block;
         width: 100%;
@@ -386,8 +395,6 @@ section {
           #main #portfolio .section-content .thumbnails li:nth-of-type(6):hover:before {
             background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
             transition: .5s; }
-        #main #portfolio .section-content .thumbnails li:nth-of-type(6) .screenshot a img {
-          display: none; }
       #main #portfolio .section-content .thumbnails li:nth-of-type(7) {
         display: block;
         width: 100%;
@@ -400,8 +407,6 @@ section {
           #main #portfolio .section-content .thumbnails li:nth-of-type(7):hover:before {
             background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
             transition: .5s; }
-        #main #portfolio .section-content .thumbnails li:nth-of-type(7) .screenshot a img {
-          display: none; }
       #main #portfolio .section-content .thumbnails li:nth-of-type(8) {
         display: block;
         width: 100%;
@@ -414,8 +419,6 @@ section {
           #main #portfolio .section-content .thumbnails li:nth-of-type(8):hover:before {
             background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
             transition: .5s; }
-        #main #portfolio .section-content .thumbnails li:nth-of-type(8) .screenshot a img {
-          display: none; }
       #main #portfolio .section-content .thumbnails li:nth-of-type(9) {
         display: block;
         width: 100%;
@@ -428,8 +431,6 @@ section {
           #main #portfolio .section-content .thumbnails li:nth-of-type(9):hover:before {
             background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
             transition: .5s; }
-        #main #portfolio .section-content .thumbnails li:nth-of-type(9) .screenshot a img {
-          display: none; }
     #main #portfolio .item .thumbnails {
       column-count: 4;
       column-gap: 0px;
@@ -443,7 +444,8 @@ section {
         padding: 0;
         overflow: hidden;
         position: relative;
-        transition: .5s; }
+        transition: .5s;
+        display: block; }
         #main #portfolio .item .thumbnails li:before {
           content: '';
           position: absolute;
@@ -475,10 +477,7 @@ section {
             #main #portfolio .item .thumbnails li div .caption p {
               color: #f3f3f3; }
       #main #portfolio .item .thumbnails li:nth-of-type(1) {
-        display: block;
-        width: 100%;
-        height: 350px;
-        background: url(https://images.pexels.com/photos/260998/pexels-photo-260998.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb) no-repeat center center;
+        background: url(https://images.pexels.com/photos/159304/network-cable-ethernet-computer-159304.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb) no-repeat center center;
         background-size: 125%; }
         #main #portfolio .item .thumbnails li:nth-of-type(1):hover {
           background-size: 150%;
@@ -489,9 +488,6 @@ section {
         #main #portfolio .item .thumbnails li:nth-of-type(1) .screenshot a img {
           display: none; }
       #main #portfolio .item .thumbnails li:nth-of-type(2) {
-        display: block;
-        width: 100%;
-        height: 350px;
         background: url(https://images.pexels.com/photos/147413/twitter-facebook-together-exchange-of-information-147413.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb) no-repeat center center;
         background-size: 125%; }
         #main #portfolio .item .thumbnails li:nth-of-type(2):hover {
@@ -503,9 +499,6 @@ section {
         #main #portfolio .item .thumbnails li:nth-of-type(2) .screenshot a img {
           display: none; }
       #main #portfolio .item .thumbnails li:nth-of-type(3) {
-        display: block;
-        width: 100%;
-        height: 350px;
         background: url(https://images.pexels.com/photos/42153/pexels-photo-42153.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb) no-repeat center center;
         background-size: 125%; }
         #main #portfolio .item .thumbnails li:nth-of-type(3):hover {
@@ -517,9 +510,6 @@ section {
         #main #portfolio .item .thumbnails li:nth-of-type(3) .screenshot a img {
           display: none; }
       #main #portfolio .item .thumbnails li:nth-of-type(4) {
-        display: block;
-        width: 100%;
-        height: 350px;
         background: url(https://images.pexels.com/photos/188975/holocaust-memorial-berlin-holocaust-memorial-188975.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb) no-repeat center center;
         background-size: 125%; }
         #main #portfolio .item .thumbnails li:nth-of-type(4):hover {
@@ -531,9 +521,6 @@ section {
         #main #portfolio .item .thumbnails li:nth-of-type(4) .screenshot a img {
           display: none; }
       #main #portfolio .item .thumbnails li:nth-of-type(5) {
-        display: block;
-        width: 100%;
-        height: 350px;
         background: url(https://images.pexels.com/photos/567449/pexels-photo-567449.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb) no-repeat center center;
         background-size: 125%; }
         #main #portfolio .item .thumbnails li:nth-of-type(5):hover {
@@ -545,9 +532,6 @@ section {
         #main #portfolio .item .thumbnails li:nth-of-type(5) .screenshot a img {
           display: none; }
       #main #portfolio .item .thumbnails li:nth-of-type(6) {
-        display: block;
-        width: 100%;
-        height: 350px;
         background: url(https://images.pexels.com/photos/325702/pexels-photo-325702.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb) no-repeat center center;
         background-size: 125%; }
         #main #portfolio .item .thumbnails li:nth-of-type(6):hover {
@@ -559,9 +543,6 @@ section {
         #main #portfolio .item .thumbnails li:nth-of-type(6) .screenshot a img {
           display: none; }
       #main #portfolio .item .thumbnails li:nth-of-type(7) {
-        display: block;
-        width: 100%;
-        height: 350px;
         background: url(https://images.pexels.com/photos/35177/pexels-photo.jpg?w=1260&h=750&auto=compress&cs=tinysrgb) no-repeat center center;
         background-size: 125%; }
         #main #portfolio .item .thumbnails li:nth-of-type(7):hover {
@@ -573,9 +554,6 @@ section {
         #main #portfolio .item .thumbnails li:nth-of-type(7) .screenshot a img {
           display: none; }
       #main #portfolio .item .thumbnails li:nth-of-type(8) {
-        display: block;
-        width: 100%;
-        height: 350px;
         background: url(https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb) no-repeat center center;
         background-size: 125%; }
         #main #portfolio .item .thumbnails li:nth-of-type(8):hover {
@@ -628,76 +606,24 @@ section {
         height: 350px;
         background: url(https://images.pexels.com/photos/428339/pexels-photo-428339.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb) no-repeat center center;
         background-size: 125%; }
-        #main #team .section-content .about .team .thumbnails > .profile:nth-of-type(1):hover {
-          background-size: 150%;
-          transition: .5s; }
-          #main #team .section-content .about .team .thumbnails > .profile:nth-of-type(1):hover .thumbnail {
-            display: block;
-            transition: .5s; }
-            #main #team .section-content .about .team .thumbnails > .profile:nth-of-type(1):hover .thumbnail .caption .social {
-              display: flex; }
-          #main #team .section-content .about .team .thumbnails > .profile:nth-of-type(1):hover .social {
-            display: flex; }
-          #main #team .section-content .about .team .thumbnails > .profile:nth-of-type(1):hover:before {
-            background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
-            transition: .5s; }
       #main #team .section-content .about .team .thumbnails > .profile:nth-of-type(2) {
         display: block;
         width: 100%;
         height: 350px;
         background: url(https://images.pexels.com/photos/307847/pexels-photo-307847.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb) no-repeat center center;
         background-size: 125%; }
-        #main #team .section-content .about .team .thumbnails > .profile:nth-of-type(2):hover {
-          background-size: 150%;
-          transition: .5s; }
-          #main #team .section-content .about .team .thumbnails > .profile:nth-of-type(2):hover .thumbnail {
-            display: block;
-            transition: .5s; }
-            #main #team .section-content .about .team .thumbnails > .profile:nth-of-type(2):hover .thumbnail .caption .social {
-              display: flex; }
-          #main #team .section-content .about .team .thumbnails > .profile:nth-of-type(2):hover .social {
-            display: flex; }
-          #main #team .section-content .about .team .thumbnails > .profile:nth-of-type(2):hover:before {
-            background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
-            transition: .5s; }
       #main #team .section-content .about .team .thumbnails > .profile:nth-of-type(3) {
         display: block;
         width: 100%;
         height: 350px;
         background: url(https://images.pexels.com/photos/450271/pexels-photo-450271.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb) no-repeat center center;
         background-size: 125%; }
-        #main #team .section-content .about .team .thumbnails > .profile:nth-of-type(3):hover {
-          background-size: 150%;
-          transition: .5s; }
-          #main #team .section-content .about .team .thumbnails > .profile:nth-of-type(3):hover .thumbnail {
-            display: block;
-            transition: .5s; }
-            #main #team .section-content .about .team .thumbnails > .profile:nth-of-type(3):hover .thumbnail .caption .social {
-              display: flex; }
-          #main #team .section-content .about .team .thumbnails > .profile:nth-of-type(3):hover .social {
-            display: flex; }
-          #main #team .section-content .about .team .thumbnails > .profile:nth-of-type(3):hover:before {
-            background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
-            transition: .5s; }
       #main #team .section-content .about .team .thumbnails > .profile:nth-of-type(4) {
         display: block;
         width: 100%;
         height: 350px;
         background: url(https://images.pexels.com/photos/57690/pexels-photo-57690.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb) no-repeat center center;
         background-size: 125%; }
-        #main #team .section-content .about .team .thumbnails > .profile:nth-of-type(4):hover {
-          background-size: 150%;
-          transition: .5s; }
-          #main #team .section-content .about .team .thumbnails > .profile:nth-of-type(4):hover .thumbnail {
-            display: block;
-            transition: .5s; }
-            #main #team .section-content .about .team .thumbnails > .profile:nth-of-type(4):hover .thumbnail .caption .social {
-              display: flex; }
-          #main #team .section-content .about .team .thumbnails > .profile:nth-of-type(4):hover .social {
-            display: flex; }
-          #main #team .section-content .about .team .thumbnails > .profile:nth-of-type(4):hover:before {
-            background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
-            transition: .5s; }
       #main #team .section-content .about .team .thumbnails .profile {
         width: 100%;
         height: 450px;
@@ -717,6 +643,19 @@ section {
           background-image: linear-gradient(to bottom right, rgba(42, 47, 85, 0.7), rgba(42, 8, 69, 0.7));
           overflow: hidden;
           transition: .5s; }
+        #main #team .section-content .about .team .thumbnails .profile:hover {
+          background-size: 150%;
+          transition: .5s; }
+          #main #team .section-content .about .team .thumbnails .profile:hover .thumbnail {
+            display: block;
+            transition: .5s; }
+            #main #team .section-content .about .team .thumbnails .profile:hover .thumbnail .caption .social {
+              display: flex; }
+          #main #team .section-content .about .team .thumbnails .profile:hover .social {
+            display: flex; }
+          #main #team .section-content .about .team .thumbnails .profile:hover:before {
+            background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+            transition: .5s; }
         #main #team .section-content .about .team .thumbnails .profile .thumbnail {
           position: absolute;
           top: 0;
@@ -766,109 +705,86 @@ section {
               display: none;
               justify-content: center; }
               #main #team .section-content .about .team .thumbnails .profile .thumbnail .caption .social li:nth-of-type(1) {
-                display: block;
-                width: 25px;
-                height: 25px;
-                margin: auto 10px;
-                padding: 0;
-                background: url(https://drive.google.com/uc?export=view&id=0Bwu5EGqxLm53ZXI5VUJVdVRvSFE) no-repeat center center;
-                background-size: cover;
-                transition: .5s;
-                opacity: 1; }
-                #main #team .section-content .about .team .thumbnails .profile .thumbnail .caption .social li:nth-of-type(1):hover {
-                  transition: .5s;
-                  opacity: .5; }
+                background: url(https://drive.google.com/uc?export=view&id=0Bwu5EGqxLm53ZXI5VUJVdVRvSFE) no-repeat center center/cover; }
               #main #team .section-content .about .team .thumbnails .profile .thumbnail .caption .social li:nth-of-type(2) {
-                display: block;
-                width: 25px;
-                height: 25px;
-                margin: auto 10px;
-                padding: 0;
-                background: url(https://drive.google.com/uc?export=view&id=0Bwu5EGqxLm53U1ZJOGFiVTNDbVk) no-repeat center center;
-                background-size: cover;
-                transition: .5s;
-                opacity: 1; }
-                #main #team .section-content .about .team .thumbnails .profile .thumbnail .caption .social li:nth-of-type(2):hover {
-                  transition: .5s;
-                  opacity: .5; }
+                background: url(https://drive.google.com/uc?export=view&id=0Bwu5EGqxLm53U1ZJOGFiVTNDbVk) no-repeat center center/cover; }
               #main #team .section-content .about .team .thumbnails .profile .thumbnail .caption .social li:nth-of-type(3) {
+                background: url(https://drive.google.com/uc?export=view&id=0Bwu5EGqxLm53aEpER3dpNkg4dE0) no-repeat center center/cover; }
+              #main #team .section-content .about .team .thumbnails .profile .thumbnail .caption .social li {
                 display: block;
                 width: 25px;
                 height: 25px;
                 margin: auto 10px;
                 padding: 0;
-                background: url(https://drive.google.com/uc?export=view&id=0Bwu5EGqxLm53aEpER3dpNkg4dE0) no-repeat center center;
-                background-size: cover;
                 transition: .5s;
                 opacity: 1; }
-                #main #team .section-content .about .team .thumbnails .profile .thumbnail .caption .social li:nth-of-type(3):hover {
+                #main #team .section-content .about .team .thumbnails .profile .thumbnail .caption .social li:hover {
                   transition: .5s;
                   opacity: .5; }
-
-#contact {
-  z-index: 500;
-  position: relative; }
-  #contact .section-title {
-    width: 100%;
-    height: auto;
-    display: block; }
-    #contact .section-title h1 {
+  #main #contact {
+    z-index: 500;
+    position: relative; }
+    #main #contact .section-title {
       width: 100%;
-      color: #222222;
-      font-size: 48px;
-      margin: 0 auto;
-      text-align: center;
-      margin-top: 150px; }
-    #contact .section-title p {
-      width: 100%;
-      color: #2a2f55;
-      font-size: 24px;
-      margin: 0 auto;
-      text-align: center;
-      margin-bottom: 150px; }
-  #contact .section-content .info {
-    display: block;
-    float: left;
-    width: 100%;
-    height: 100%; }
-    #contact .section-content .info p {
-      color: #f3f3f3;
-      width: 65%;
-      margin: 0 auto;
-      margin-bottom: 2px;
-      padding: 25px 17.5%;
-      text-align: center;
-      background-color: #1e1e42; }
-    #contact .section-content .info .details {
-      background-color: #2a2f55;
-      display: inline-block;
-      width: 65%;
       height: auto;
-      margin: 0 auto;
-      padding: 25px 17.5%; }
-      #contact .section-content .info .details address {
+      display: block; }
+      #main #contact .section-title h1 {
+        width: 100%;
+        color: #222222;
+        font-size: 48px;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 150px; }
+      #main #contact .section-title p {
+        width: 100%;
+        color: #2a2f55;
+        font-size: 24px;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 150px; }
+    #main #contact .section-content .info {
+      display: block;
+      float: left;
+      width: 100%;
+      height: 100%; }
+      #main #contact .section-content .info p {
         color: #f3f3f3;
-        width: 48%;
-        height: 100%; }
-      #contact .section-content .info .details .left {
-        float: left;
-        text-align: right; }
-        #contact .section-content .info .details .left em {
-          float: right;
-          display: block; }
-      #contact .section-content .info .details .right {
-        float: right !important;
-        text-align: left; }
-        #contact .section-content .info .details .right span {
-          float: left !important;
-          display: block; }
-        #contact .section-content .info .details .right a {
-          float: left !important;
-          display: block;
-          text-decoration: none;
-          color: #888888; }
-  #contact .section-content .map iframe {
-    width: 100%; }
+        width: 65%;
+        margin: 0 auto;
+        margin-bottom: 2px;
+        padding: 25px 17.5%;
+        text-align: center;
+        background-color: #1e1e42; }
+      #main #contact .section-content .info .details {
+        background-color: #2a2f55;
+        display: inline-block;
+        width: 65%;
+        height: auto;
+        margin: 0 auto;
+        padding: 25px 17.5%; }
+        #main #contact .section-content .info .details address {
+          color: #f3f3f3;
+          width: 48%;
+          height: 100%; }
+        #main #contact .section-content .info .details .left {
+          float: left;
+          text-align: right; }
+          #main #contact .section-content .info .details .left em {
+            float: right;
+            display: block; }
+        #main #contact .section-content .info .details .right {
+          float: right !important;
+          text-align: left; }
+          #main #contact .section-content .info .details .right span {
+            float: left !important;
+            display: block; }
+          #main #contact .section-content .info .details .right a {
+            float: left !important;
+            display: block;
+            text-decoration: none;
+            color: #888888; }
+    #main #contact .section-content .map iframe {
+      width: 100%; }
 
 .footer {
   background-color: #2a2f55;
@@ -961,5 +877,3 @@ section {
     /* Chrome, Safari, Opera */
     transform: rotate(180deg) translateY(3px);
     transition: .25s; }
-
-/*# sourceMappingURL=style.css.map */
