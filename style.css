@@ -872,7 +872,7 @@ section {
   overflow: hidden; }
   .scroll-top:hover {
     -ms-transform: rotate(180deg) translateY(3px);
-    /* IE 9 */
+    /* IE 9  */
     -webkit-transform: rotate(180deg) translateY(3px);
     /* Chrome, Safari, Opera */
     transform: rotate(180deg) translateY(3px);
