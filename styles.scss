@@ -57,10 +57,10 @@ section {
         margin: 15px auto;
         margin-left: 0;
         padding: 0;
-        width: 135px;
+        width: auto;
         height: ($nav_height - 30px);
-        background: url("https://d2k1ftgv7pobq7.cloudfront.net/meta/u/res/images/trello-header-logos/af7af6ed478d3460709d715d9b3f74a4/trello-logo-white.svg");
-        background-size: cover;
+        background: url("https://drive.google.com/uc?export=view&id=0Bwu5EGqxLm53SlE5X3BtSGsyZWs");
+        background-size: contain;
         background-repeat: no-repeat;
         background-position: center center;
       }
@@ -102,7 +102,7 @@ section {
     height: 850px;
     margin: 0 auto;
     padding: 0;
-    background: url(test.jpg) center center no-repeat;
+    background: url('https://images.pexels.com/photos/248159/pexels-photo-248159.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb') center center no-repeat;
     background-size: cover;
     overflow: hidden;
     position: relative;
@@ -268,7 +268,6 @@ section {
             }
             h2 {
               color: $c_04;
-              font-weight: 300;
               position: absolute;
               top: 0;
               bottom: 0;
@@ -278,7 +277,7 @@ section {
               width: 95%;
               height: 35%;
               text-align: center;
-              font-size: 36px;
+              font-size: 28px;
             }
             .content {
               p {
@@ -467,7 +466,6 @@ section {
                 height: 350px;
                 margin: 0 auto;
                 padding: 0;
-                background-size: 125%;
                 overflow: hidden;
                 position: relative;
                 transition: .5s;
@@ -582,25 +580,57 @@ section {
           display: inline-block;
         }
         .team {
-          > ul /* .thumbnails*/{
+            .thumbnails /* ul */{
             column-count: 4;
             column-gap: 0px;
             list-style-type: none;
             margin: 0;
             padding: 0;
-            > li:first-child {
-              background: url('https://images.pexels.com/photos/428339/pexels-photo-428339.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb') center center no-repeat;
-            }
-            > li:nth-child(2) {
-              background: url('https://images.pexels.com/photos/307847/pexels-photo-307847.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb') center center no-repeat;
-            }
-            > li:nth-child(3) {
-              background: url('https://images.pexels.com/photos/450271/pexels-photo-450271.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb') center center no-repeat;
-            }
-            > li:nth-child(4) {
-              background: url('https://images.pexels.com/photos/57690/pexels-photo-57690.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb') center center no-repeat;
-            }
-            > li /* .profile */{
+
+            $imagesGroup1:
+            "https://images.pexels.com/photos/428339/pexels-photo-428339.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb",
+            "https://images.pexels.com/photos/307847/pexels-photo-307847.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb",
+            "https://images.pexels.com/photos/450271/pexels-photo-450271.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb",
+            "https://images.pexels.com/photos/57690/pexels-photo-57690.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb";
+            
+            $img: zip($imagesGroup1);
+        
+            $nthCount: 1;
+
+            @each $img in $img {
+              > .profile:nth-of-type(#{$nthCount}) {
+                  // SET SIZE OF IMAGE YOU WANT
+                  display: block;
+                  width: 100%;
+                  height: 350px;
+                  background: url(#{nth($img, 1)}) no-repeat center center;
+                  background-size: 125%;
+                  &:hover {
+                    background-size: 150%;
+        
+                    transition: .5s;
+                    .thumbnail {
+                      display: block;
+                      transition: .5s;
+                      .caption {
+                        .social {
+                          display: flex;
+                        }
+                      }
+                      
+                    }
+                    .social {
+                      display: flex;
+                    }
+                    &:before {
+                      background-image: linear-gradient(to bottom right,$g_02,$g_02);
+                      transition: .5s;
+                    }
+                  }  
+              }
+              $nthCount: $nthCount + 1;
+             }
+            .profile /* li */{
               width: 100%;
               height: 450px;
               margin: 0 auto;
@@ -620,16 +650,6 @@ section {
                 overflow: hidden;
                 transition: .5s;
               }
-              &:hover {
-                .thumbnail {
-                  display: block;
-                  transition: .5s;
-                }
-                &:before {
-                  background-image: linear-gradient(to bottom right,$g_02,$g_02);
-                  transition: .5s;
-                }
-              }
               .thumbnail {
                 position: absolute;
                 top: 0;
@@ -640,13 +660,11 @@ section {
                 width: 100%;
                 height: 50%;
                 text-align: center;
-                display: none;
                 transition: .5s;
-                a {
+                > a {
                   img {
                     display: none;
                   }
-
                 }
                 .caption {
                   display: block;
@@ -664,6 +682,11 @@ section {
                     width: 80%;
                     margin: 10px auto;
                     color: $c_04;
+                    font-size: 24px;
+                    a {
+                      color: $c_05;
+                      text-decoration: none;
+                    }
                   }
                   .meta {
                     color: $c_04;
@@ -674,20 +697,42 @@ section {
                     margin: 5px auto;
                     color: $c_04;
                   }
-                  ul {
-                    column-count: 3;
-                    column-gap: 5px;
+                  .social { /* ul */
                     list-style-type: none;
-                    margin: 10px;
+                    margin: 15px auto;
                     padding: 0;
-                    li {
-                      a {
-                        em {
-                          width: 15px;
-                          height: 15px;
+                    width: 50%;
+                    display: none;
+                    justify-content: center;
+
+                    $imagesGroup2:  //actual
+                      "https://drive.google.com/uc?export=view&id=0Bwu5EGqxLm53ZXI5VUJVdVRvSFE",
+                      "https://drive.google.com/uc?export=view&id=0Bwu5EGqxLm53U1ZJOGFiVTNDbVk",
+                      "https://drive.google.com/uc?export=view&id=0Bwu5EGqxLm53aEpER3dpNkg4dE0";
+
+                      $img2: zip($imagesGroup2);
+                  
+                      $nth2Count: 1;
+
+                      @each $img in $img2 {
+                        li:nth-of-type(#{$nth2Count}) {
+                            // SET SIZE OF IMAGE YOU WANT
+                            display: block;
+                            width: 25px;
+                            height: 25px;
+                            margin: auto 10px;
+                            padding: 0;
+                            background: url(#{nth($img, 1)}) no-repeat center center;
+                            background-size: cover;
+                            transition: .5s;
+                            opacity: 1;
+                            &:hover {
+                              transition: .5s;
+                              opacity: .5;
+                            }                       
                         }
-                      }
-                    }
+                        $nth2Count: $nth2Count + 1;
+                       }
                   }
                 }
               }
@@ -698,7 +743,7 @@ section {
     }
 
   }
-
+}
   #contact {
     z-index: 500;
     position: relative;
@@ -781,7 +826,7 @@ section {
       }
     }
   }
-}
+
 .footer {
   background-color: $c_03;
   width: 100%;
