@@ -17,13 +17,6 @@ $g_06: rgba(42,8,69,0.7);
 $nav_height: 75px;
 $page_width: 65%;
 
-@mixin transition($time) {
-   -webkit-transition: $time;
-      -moz-transition: $time;
-       -ms-transition: $time;
-          transition : $time;
-}
-
 html, body {
   width: 100%;
   height: 100%;
@@ -59,10 +52,7 @@ section {
         padding: 0;
         width: auto;
         height: ($nav_height - 30px);
-        background: url("https://drive.google.com/uc?export=view&id=0Bwu5EGqxLm53SlE5X3BtSGsyZWs");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center center;
+        background: url("https://drive.google.com/uc?export=view&id=0Bwu5EGqxLm53SlE5X3BtSGsyZWs") no-repeat center center / contain;
       }
     }
     .nav {
@@ -73,21 +63,26 @@ section {
         margin: 0;
         list-style: none;
       }
-  
       li {
+        margin: 0;
         display: inline-block;
-        margin-right: 15px;
       }
       a {
+        margin: 0;
         display: block;
         text-decoration: none;
         line-height: $nav_height;
+        padding: 0 10px;
         color: $c_04;
+        transition: .5s;
+        &:hover {
+          background-color: $c_06;
+          transition: .5s;
+          border-bottom: 50px solid $c_03;
+        }
       }
     }
-    
   }
-    
 }
 
 #main {
@@ -102,8 +97,7 @@ section {
     height: 850px;
     margin: 0 auto;
     padding: 0;
-    background: url('https://images.pexels.com/photos/248159/pexels-photo-248159.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb') center center no-repeat;
-    background-size: cover;
+    background: url('https://images.pexels.com/photos/248159/pexels-photo-248159.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb') center center no-repeat / cover;
     overflow: hidden;
     position: relative;
     z-index: 500;
@@ -444,7 +438,7 @@ section {
 
         .item {
           $imagesGroup:
-          "https://images.pexels.com/photos/260998/pexels-photo-260998.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb",
+          "https://images.pexels.com/photos/159304/network-cable-ethernet-computer-159304.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb",
           "https://images.pexels.com/photos/147413/twitter-facebook-together-exchange-of-information-147413.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb",
           "https://images.pexels.com/photos/42153/pexels-photo-42153.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb",
           "https://images.pexels.com/photos/188975/holocaust-memorial-berlin-holocaust-memorial-188975.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb",
@@ -586,17 +580,13 @@ section {
             list-style-type: none;
             margin: 0;
             padding: 0;
-
             $imagesGroup1:
             "https://images.pexels.com/photos/428339/pexels-photo-428339.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb",
             "https://images.pexels.com/photos/307847/pexels-photo-307847.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb",
             "https://images.pexels.com/photos/450271/pexels-photo-450271.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb",
             "https://images.pexels.com/photos/57690/pexels-photo-57690.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb";
-            
             $img: zip($imagesGroup1);
-        
             $nthCount: 1;
-
             @each $img in $img {
               > .profile:nth-of-type(#{$nthCount}) {
                   // SET SIZE OF IMAGE YOU WANT
@@ -605,28 +595,6 @@ section {
                   height: 350px;
                   background: url(#{nth($img, 1)}) no-repeat center center;
                   background-size: 125%;
-                  &:hover {
-                    background-size: 150%;
-        
-                    transition: .5s;
-                    .thumbnail {
-                      display: block;
-                      transition: .5s;
-                      .caption {
-                        .social {
-                          display: flex;
-                        }
-                      }
-                      
-                    }
-                    .social {
-                      display: flex;
-                    }
-                    &:before {
-                      background-image: linear-gradient(to bottom right,$g_02,$g_02);
-                      transition: .5s;
-                    }
-                  }  
               }
               $nthCount: $nthCount + 1;
              }
@@ -650,6 +618,26 @@ section {
                 overflow: hidden;
                 transition: .5s;
               }
+              &:hover {
+                background-size: 150%;
+                transition: .5s;
+                .thumbnail {
+                  display: block;
+                  transition: .5s;
+                  .caption {
+                    .social {
+                      display: flex;
+                    }
+                  }
+                }
+                .social {
+                  display: flex;
+                }
+                &:before {
+                  background-image: linear-gradient(to bottom right,$g_02,$g_02);
+                  transition: .5s;
+                }
+              } 
               .thumbnail {
                 position: absolute;
                 top: 0;
@@ -705,33 +693,30 @@ section {
                     display: none;
                     justify-content: center;
 
-                    $imagesGroup2:  //actual
+                    $imagesGroup2:
                       "https://drive.google.com/uc?export=view&id=0Bwu5EGqxLm53ZXI5VUJVdVRvSFE",
                       "https://drive.google.com/uc?export=view&id=0Bwu5EGqxLm53U1ZJOGFiVTNDbVk",
                       "https://drive.google.com/uc?export=view&id=0Bwu5EGqxLm53aEpER3dpNkg4dE0";
-
                       $img2: zip($imagesGroup2);
-                  
                       $nth2Count: 1;
-
                       @each $img in $img2 {
                         li:nth-of-type(#{$nth2Count}) {
-                            // SET SIZE OF IMAGE YOU WANT
-                            display: block;
-                            width: 25px;
-                            height: 25px;
-                            margin: auto 10px;
-                            padding: 0;
-                            background: url(#{nth($img, 1)}) no-repeat center center;
-                            background-size: cover;
-                            transition: .5s;
-                            opacity: 1;
-                            &:hover {
-                              transition: .5s;
-                              opacity: .5;
-                            }                       
+                            background: url(#{nth($img, 1)}) no-repeat center center / cover;                       
                         }
                         $nth2Count: $nth2Count + 1;
+                       }
+                       li {
+                        display: block;
+                        width: 25px;
+                        height: 25px;
+                        margin: auto 10px;
+                        padding: 0;
+                        transition: .5s;
+                        opacity: 1;
+                        &:hover {
+                          transition: .5s;
+                          opacity: .5;
+                        } 
                        }
                   }
                 }
@@ -743,7 +728,7 @@ section {
     }
 
   }
-}
+
   #contact {
     z-index: 500;
     position: relative;
@@ -826,7 +811,7 @@ section {
       }
     }
   }
-
+}
 .footer {
   background-color: $c_03;
   width: 100%;
@@ -846,7 +831,6 @@ section {
       font-size: 14px;
       display: inline-block;
     }
-
     ul /* .social */ {
       z-index: 0;
       list-style: none;
@@ -898,9 +882,7 @@ section {
           background-image: url('https://drive.google.com/uc?export=view&id=0Bwu5EGqxLm53aEpER3dpNkg4dE0');
       }
     }
-
   }
-  
 }
 .scroll-top {
   position: fixed;
